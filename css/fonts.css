@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Domine-Bold';
+    src: url('../fonts/Domine/Domine-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Domine-Regular';
+    src: url('../fonts/Domine/Domine-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Domine-Medium';
+    src: url('../fonts/Domine/Domine-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Domine-SemiBold';
+    src: url('../fonts/Domine/Domine-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

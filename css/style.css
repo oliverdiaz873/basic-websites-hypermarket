@@ -43,7 +43,10 @@ header  img {
 
 header  h1 {
     margin: 0;
-    font-size: 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: 'Domine-Bold', serif;
+    
 }
 
 header a.logo-header { /* logo clickeable */
@@ -249,10 +252,11 @@ nav.menu a:hover {
 .ofertas .productos-container {
     display: flex;             /* coloca las ofertas en fila */
     gap: 20px;                 /* espacio entre ofertas */
-    justify-content: center;
     overflow-x: auto;          /* permite scroll horizontal */
     scroll-behavior: smooth;   /* animación suave al hacer scroll */
-    scroll-padding-left: 20px; /* asegura que el primer item no quede cortado */
+
+
+ 
 }
 
 
@@ -289,11 +293,13 @@ nav.menu a:hover {
     border-radius: 12px;
     margin: 10px;
     padding: 20px;
-    width: 240px;
+    width: 200px;
     vertical-align: top;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
     flex: 0 0 auto;
+
+
 }
 
 .oferta-item:hover {
@@ -320,12 +326,15 @@ nav.menu a:hover {
 /* Sección Productos Destacados */
 
 .productos-destacados {
-    padding: 50px 20px;
+    padding: 30px 20px;
     box-sizing: border-box;
     background-color: rgba(0,0,0,0.8);
     max-width: 1200px;  /* ancho máximo deseado */
     margin: 0 auto;     /* centra horizontalmente */
     border-radius: 20px;
+
+    height: 500px; /* alto fijo */
+      
 }
 
 
@@ -335,7 +344,7 @@ nav.menu a:hover {
 .productos-destacados h2 {
     font-size: 28px;
     color: white;
-    padding: 10px 20px;
+    padding: 1px 20px;
       background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     display: inline-block; /* ajusta el fondo al texto */
@@ -346,7 +355,7 @@ nav.menu a:hover {
 .productos-destacados .producto {
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
-    padding: 20px;
+    padding: 18px;
     border-radius: 10px;
     width: 200px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -361,14 +370,12 @@ nav.menu a:hover {
 /* Contenedor de productos para fila horizontal */
 .productos-destacados .productos-container {
     display: flex;             /* coloca productos en fila */
-   justify-content: center;
-    
     gap: 20px;                 /* espacio entre productos */
-
     overflow-x: auto;          /* permite scroll horizontal */
     scroll-behavior: smooth;   /* animación suave al hacer scroll */
-    scroll-padding-left: 20px; /* opcional: asegura que el primer producto no quede cortado al hacer scroll */
-     scroll-padding-right: 20px; /* evita que el último item quede cortado */
+     padding: 0 20px; /* espacio a los lados */
+   
+
 }
 
 
