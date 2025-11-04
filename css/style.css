@@ -1,0 +1,508 @@
+/* Reset básico */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-image: url('../imagenes/fondos/fondo-index.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: rgba(0,0,0,0.8);
+    padding: 5px 30px;
+    border-radius: 20px;
+    width: fit-content;  /* La propiedad width: fit-content; ajusta automáticamente el ancho del elemento al tamaño mínimo necesario para que quepa su contenido */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    white-space: nowrap;  /* white-space: nowrap; impide que el texto o los elementos hijos pasen a una nueva línea es decir, todo el contenido se mantiene en una sola línea */
+    position: fixed;           /* fijo en la ventana */
+    top: 20px;                 /* margen superior */
+    left: 50%;                 /* posición horizontal desde el centro */
+    transform: translateX(-50%); /* centra el header horizontalmente de forma perfecta */
+    width: fit-content;        /* ancho según contenido */
+    z-index: 1000;    /* el header Siempre estará visible por encima de otros elementos de la página en el eje z */
+}
+
+header  img {
+    width: 45px;
+    height: auto;
+}
+
+header  h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+header a.logo-header { /* logo clickeable */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none; /* quitar subrayado */
+    color: white; /* para que el h1 mantenga el color */
+}
+header a.logo-header h1 {
+    margin: 0;
+}
+
+/* Main */
+
+main {
+    text-align: center;
+    margin-top: 120px; /* separacion ideal del main y el header fijo*/
+}
+
+/* tarjeta de producto */
+
+.producto {    
+    display: inline-block;
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    vertical-align: top;
+}
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* nav */
+
+nav.menu > ul {   /* Selecciona solo los elementos <ul> que son hijos directos de un elemento <nav> con clase menu. */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Nivel 1 links */
+nav.menu > ul > li {
+    position: relative;
+}
+nav.menu > ul > li > a {
+    display: block;
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+nav.menu > ul > li:hover > a {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Nivel 2 */
+nav.menu > ul > li > ul {
+    display: none; /* oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 1000;
+}
+nav.menu > ul > li:hover > ul {
+    display: flex; /* mostrar al hacer hover sobre nivel 1 */
+}
+
+/* Nivel 3 y subniveles */
+nav.menu ul li ul li {
+    position: relative;
+}
+nav.menu ul li ul li > ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    min-width: 160px;
+}
+nav.menu ul li ul li:hover > ul {
+    display: flex;
+}
+
+
+/* Nivel 1: flecha hacia abajo solo si tiene submenú directo */
+nav.menu > ul > li:has(> ul) > a::after {
+    content: " ▼";
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Nivel 2: flecha hacia la derecha solo si tiene submenú directo */
+nav.menu > ul > li > ul > li:has(> ul) > a::after {
+    content: " ▶";
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/* Nivel 3: subnivel de submenú, flecha hacia la derecha */
+nav.menu > ul > li > ul > li > ul > li:has(> ul) > a::after {
+    content: " ▶";
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+
+/* Links en submenús */
+nav.menu ul li ul li a {
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+/* Estilo general de links y hover */
+nav.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+nav.menu a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+
+
+
+
+
+/* ========================== SECCIONES ========================== */
+    
+/* Sección Sobre Nosotros */
+
+.sobre-nosotros {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: #fff;              
+    padding: 20px 0;
+}
+
+.sobre-nosotros .contenedor {
+    display: flex;
+    align-items: center;       /* centra verticalmente imagen y texto */
+    justify-content: center;   /* centra todo el conjunto */
+    gap: 60px;                 /* espacio entre imagen y texto */
+}
+
+.sobre-nosotros img {
+    width: 450px;
+    height: auto;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.sobre-nosotros .texto {
+    max-width: 600px;
+    text-align: left;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.sobre-nosotros p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Sección Ofertas */
+
+.ofertas {
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 60px 20px;
+    color: #222;
+    max-width: 1200px;  /* ancho máximo deseado */
+    margin: 0 auto;     /* centra horizontalmente */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.ofertas .productos-container {
+    display: flex;             /* coloca las ofertas en fila */
+    gap: 20px;                 /* espacio entre ofertas */
+    justify-content: center;
+    overflow-x: auto;          /* permite scroll horizontal */
+    scroll-behavior: smooth;   /* animación suave al hacer scroll */
+    scroll-padding-left: 20px; /* asegura que el primer item no quede cortado */
+}
+
+
+/* estilos del scrollbar */
+
+.ofertas .productos-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 4px;
+}
+.ofertas .productos-container::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* Para Firefox */
+.ofertas .productos-container {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.5) rgba(0,0,0,0.2);
+}
+
+
+.ofertas h2 {
+    font-size: 27px;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    display: inline-block; /* ajusta el fondo al texto */
+    margin-bottom: 30px;
+}
+
+.oferta-item {  /* tarjeta de oferta */
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    margin: 10px;
+    padding: 20px;
+    width: 240px;
+    vertical-align: top;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    flex: 0 0 auto;
+}
+
+.oferta-item:hover {
+    transform: scale(1.05);
+}
+
+.oferta-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.oferta-item h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.oferta-item p {
+    color: #555;
+    font-size: 0.95em;
+}
+
+
+/* Sección Productos Destacados */
+
+.productos-destacados {
+    padding: 50px 20px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.8);
+    max-width: 1200px;  /* ancho máximo deseado */
+    margin: 0 auto;     /* centra horizontalmente */
+    border-radius: 20px;
+}
+
+
+
+
+/* Título centrado con fondo negro transparente */
+.productos-destacados h2 {
+    font-size: 28px;
+    color: white;
+    padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    display: inline-block; /* ajusta el fondo al texto */
+    margin-bottom: 30px;
+}
+
+/* Cada producto */
+.productos-destacados .producto {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+     flex: 0 0 auto; /* evita que se encojan */
+
+  
+}
+
+
+
+
+/* Contenedor de productos para fila horizontal */
+.productos-destacados .productos-container {
+    display: flex;             /* coloca productos en fila */
+   justify-content: center;
+    
+    gap: 20px;                 /* espacio entre productos */
+
+    overflow-x: auto;          /* permite scroll horizontal */
+    scroll-behavior: smooth;   /* animación suave al hacer scroll */
+    scroll-padding-left: 20px; /* opcional: asegura que el primer producto no quede cortado al hacer scroll */
+     scroll-padding-right: 20px; /* evita que el último item quede cortado */
+}
+
+
+/* Ocultar scrollbars en navegadores modernos (opcional) */
+.productos-destacados .productos-container::-webkit-scrollbar {
+    height: 4px;
+}
+.productos-destacados .productos-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 4px;
+}
+.productos-destacados .productos-container::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* Para Firefox */
+.productos-destacados .productos-container {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.5) rgba(0,0,0,0.2);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+
+/* Imagen del producto */
+.productos-destacados .producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Nombre del producto */
+.productos-destacados .producto h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+/* Precio del producto */
+.productos-destacados .producto p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Efecto al pasar el mouse */
+.productos-destacados .producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+/* Aseguramos que las secciones ocupen todo el ancho */
+section {
+    width: 100%;
+    box-sizing: border-box; /* para que el padding no expanda más allá del 100% */
+}
+
+/* Si quieres mantener el contenido centrado dentro de la sección */
+section > * {
+    margin: 0 auto;  
+}
+
+
+/* footer */
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
