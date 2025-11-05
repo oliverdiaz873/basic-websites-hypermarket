@@ -473,15 +473,49 @@ footer {
 
 
 
+/* === Breadcrumb === */
+.breadcrumb {
+  display: inline-block; /* Se ajusta al contenido */
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #555;
+  background-color: rgba(0,0,0,0.8);
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  color: #1769aa;
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  font-weight: bold;
+  color: #ff0000;
+}
 
 
+.breadcrumb span {
+  color: #777;
+}
 
-
-
-
-
-
-
+/* Página actual */
+.breadcrumb .actual {
+  background-color: #2196f3;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
 
 
 

@@ -2,34 +2,34 @@
 <html lang="en">
 
 <head>
+
      <!--META ETIQUETAS-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Hipermercado Superior: tu destino para compras inteligentes con la mejor selección de productos.">
+    <meta name="description" content="Descubre en Hipermercado Superior la mejor selección de alimentos frescos y de mejor calidad.">
     <meta name="author" content="Oliver Antonio Díaz"/>
     <meta name="robots" content="index, follow">  
     <meta name="copyright" content="Oliver Antonio Díaz. Todos los derechos reservados.">
     <meta name="theme-color" content="#2196f3">
 
-    <!-- etiquetas Open Graph -->
-    <meta property="og:title" content="Hipermercado Superior - Todo lo que necesitas en un solo lugar">
+    <!-- Etiquetas Open Graph -->
+    <meta property="og:title" content="Alimentos - Hipermercado Superior">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.hipermercadosuperior.com"> <!--ejemplo de url local-->
-    <meta property="og:image" content="imagenes/logo.png"> 
-    <meta property="og:description" content="Hipermercado Superior: tu destino para compras inteligentes con la mejor selección de productos.">
+    <meta property="og:url" content="https://www.hipermercadosuperior.com/alimentos"> <!-- URL de la sección -->
+    <meta property="og:image" content="imagenes/alimentos-banner.jpg"> 
+    <meta property="og:description" content="Descubre en Hipermercado Superior la mejor selección de alimentos frescos y de mejor calidad.">
     <meta property="og:site_name" content="Hipermercado Superior">
     <meta property="og:locale" content="es_ES"> 
 
-    <!--  Twitter Cards para X-->
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hipermercado Superior - Todo lo que necesitas en un solo lugar">
-    <meta name="twitter:description" content="Tu destino para compras inteligentes con la mejor selección de productos.">
-    <meta name="twitter:image" content="https://www.hipermercadosuperior.com/imagenes/logo.png">
-
+    <meta name="twitter:title" content="Alimentos - Hipermercado Superior">
+    <meta name="twitter:description" content="Descubre en Hipermercado Superior la mejor selección de alimentos frescos y de mejor calidad.">
+    <meta name="twitter:image" content="https://www.hipermercadosuperior.com/imagenes/alimentos-banner.jpg">
 
     <!-- Título, CSS y Fuentes-->
-    <title>Hipermercado Superior | Compras inteligentes y productos de calidad</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Hipermercado Superior | Sección de Alimentos</title>
+    <link rel="stylesheet" href="../css/categorias.css">
     <link rel="stylesheet" href="css/fonts.css">
 
     <!-- Favicons -->
@@ -51,8 +51,8 @@
 
      <header>
 
-       <a href="index.html" class="logo-header" aria-label="Ir a la página principal de Hipermercado Superior"> <!-- logo clickeable--> 
-        <img src="imagenes/logo/logo.jpeg" alt="logo Hipermercado Superior">
+       <a href="../index.html" class="logo-header" aria-label="Ir a la página principal de Hipermercado Superior"> <!-- logo clickeable--> 
+        <img src="../imagenes/logo/logo.jpeg" alt="logo Hipermercado Superior">
         <h1>Hipermercado Superior</h1>
        </a>
 
@@ -60,13 +60,13 @@
        <nav class="menu"> <!--barra de navegacion-->
          <ul>
                <!-- Nivel 1 -->
-                   <li><a href="#">Inicio</a></li>
+                   <li><a href="../index.html">Inicio</a></li>
 
                <!-- Nivel 1: Categorías -->
                    <li><a href="#">Categorías</a>
                        <ul>
                           <!-- Nivel 2: Alimentos -->
-                             <li><a href="categorias/Alimentos.html">Alimentos</a>
+                             <li><a href="#">Alimentos</a>
                        <ul>
                             <!-- Nivel 3: Frutas -->
                               <li><a href="#">Frutas</a>
@@ -271,20 +271,24 @@
 
 </header>
 
-
-
+<!-- Breadcrumb o indicador de ubicación -->
+<nav class="breadcrumb">
+  <a href="index.html">Inicio</a> ›
+  <span>Categorías</span> ›
+  <span class="actual">Alimentos</span>
+</nav>
        
      <main> <!--main-->
 
-          <!-- Sección: Productos Destacados -->
+          <!-- Sección: Frutas y verduras -->
           <section class="productos-destacados">
-             <h2>Productos Destacados</h2>
+             <h2>Frutas y verduras</h2>
 
              <div class="productos-container">
 
                <!-- Producto 1 -->
                  <div class="producto">
-                   <img src="imagenes/productos/Televisores/TV_samsung.avif" alt="televisor Samsung 75 pulgadas">
+                   <img src="../imagenes/productos/Alimentos/frutas y verduras/manzana roja.avif" alt="televisor Samsung 75 pulgadas">
                    <h3>Televisor samsung 75 pulgadas</h3>
                    <p>Precio: $65,000</p>
                  </div>
@@ -292,7 +296,7 @@
                <!-- Producto 2 -->
 
                <div class="producto">
-                   <img src="imagenes/productos/Neveras/Nevera_LG.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/frutas y verduras/manzana verde.avif" alt="Nevera LG">
                    <h3>Nevera LG</h3>
                    <p>Precio: $80,000</p>
                  </div>
@@ -301,7 +305,7 @@
                <!-- Producto 3 -->
                 
                 <div class="producto">
-                   <img src="imagenes/productos/Lavadora y Secadora/Lavadora_y_secadora_tecnomaster.avif" alt="Lavadora y Secadora Tecnomaster">
+                   <img src="../imagenes/productos/Alimentos/frutas y verduras/pepino.avif" alt="Lavadora y Secadora Tecnomaster">
                    <h3>Lavadora y Secadora Tecnomaster</h3>
                    <p>Precio: $33,000</p>
                  </div>
@@ -310,7 +314,7 @@
                <!-- Producto 4 -->
 
                 <div class="producto">
-                   <img src="imagenes/productos/ventilador/ventilador_Daiwa.avif" alt="Ventilador Daiwa">
+                   <img src="../imagenes/productos/Alimentos/frutas y verduras/Limon persa.avif" alt="Ventilador Daiwa">
                    <h3>Ventilador Daiwa</h3>
                    <p>Precio: $3,000</p>
                  </div>
@@ -318,25 +322,25 @@
 
 
                   <div class="producto">
-                   <img src="imagenes/productos/Neveras/Nevera_LG.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/frutas y verduras/cebolla roja.avif" alt="Nevera LG">
                    <h3>Nevera LG</h3>
                    <p>Precio: $80,000</p>
                  </div>
 
                   <div class="producto">
-                   <img src="imagenes/productos/Neveras/Nevera_LG.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/frutas y verduras/tomate de ensalada.avif" alt="Nevera LG">
                    <h3>Nevera LG</h3>
                    <p>Precio: $80,000</p>
                  </div>
 
                   <div class="producto">
-                   <img src="imagenes/productos/Neveras/Nevera_LG.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/frutas y verduras/Ajies morron.avif" alt="Nevera LG">
                    <h3>Nevera LG</h3>
                    <p>Precio: $80,000</p>
                  </div>
 
                   <div class="producto">
-                   <img src="imagenes/productos/Neveras/Nevera_LG.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/frutas y verduras/zanahoria.avif" alt="Nevera LG">
                    <h3>Nevera LG</h3>
                    <p>Precio: $80,000</p>
                  </div>
@@ -348,7 +352,7 @@
 
 
 
-          <!-- Sección: Ofertas -->
+          <!-- Sección: carnes -->
           <section class="ofertas">
               <h2>Ofertas de la Semana</h2>
                 <div class="productos-container">
@@ -394,17 +398,7 @@
           </section>
 
 
-        <!-- Sección: Sobre Nosotros -->
-        <section class="sobre-nosotros">
-             <div class="contenedor">
-               <img src="imagenes/logo/logo.jpeg" alt="logo del Hipermercado Superior">
-                 <div class="texto">
-                  <h2>Sobre Nosotros</h2>
-                  <p>En <strong>Hipermercado Superior</strong> trabajamos para ofrecerte calidad, variedad y precios justos. 
-                  Nuestro compromiso es brindarte la mejor experiencia de compra tanto en tienda física como online.</p>
-                 </div>
-             </div>
-        </section>
+        
 
     </main>
 
@@ -418,15 +412,15 @@
               <!-- Íconos de redes sociales -->
               <div class="social-icons">
                    <a href="https://facebook.com/tuweb" target="_blank" rel="nofollow noopener noreferrer" aria-label="Visítanos en Facebook">
-                    <img src="imagenes/iconos/redes/facebook.png" alt="ir a facebook de Hipermercado Superior">
+                    <img src="../imagenes/iconos/redes/facebook.png" alt="ir a facebook de Hipermercado Superior">
                    </a>
 
                    <a href="https://twitter.com/tuweb" target="_blank" rel="nofollow noopener noreferrer" aria-label="Visítanos en X (antes Twitter)">
-                    <img src="imagenes/iconos/redes/x.png" alt="ir a x de Hipermercado Superior">
+                    <img src="../imagenes/iconos/redes/x.png" alt="ir a x de Hipermercado Superior">
                    </a>
 
                    <a href="https://instagram.com/tuweb" target="_blank" rel="nofollow noopener noreferrer" aria-label="Visítanos en Instagram">
-                    <img src="imagenes/iconos/redes/instagram.png" alt="ir a instagram de Hipermercado Superior">
+                    <img src="../imagenes/iconos/redes/instagram.png" alt="ir a instagram de Hipermercado Superior">
                    </a>
               </div>
 
