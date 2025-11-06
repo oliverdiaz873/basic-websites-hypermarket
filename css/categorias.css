@@ -64,7 +64,7 @@ header a.logo-header h1 {
 
 main {
     text-align: center;
-    margin-top: 120px; /* separacion ideal del main y el header fijo*/
+    margin-top: 160px; /* separacion ideal del main y el header fijo*/
 }
 
 /* tarjeta de producto */
@@ -386,6 +386,10 @@ footer {
 
 
 
+
+
+
+
 /* Estilos generales del breadcrumb */
 .breadcrumb {
   display: inline-block; /* el ancho se adapta al contenido */
@@ -397,18 +401,27 @@ footer {
   color: #ffffff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   margin: 20px;
+
+ 
+
+   /* 🧭 Centrado bajo el header fijo */
+  position: fixed;
+  top: 80px;                /* ajusta según la altura real del header */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
 }
 
 /* Enlaces dentro del breadcrumb */
 .breadcrumb a {
-  color: #0077cc;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .breadcrumb a:hover {
-  color: #005999;
   text-decoration: underline;
+   background-color: rgba(255,255,255,0.2);
 }
 
 /* Separadores (›) */
@@ -420,23 +433,9 @@ footer {
 /* Página actual */
 .breadcrumb .actual {
   font-weight: bold;
-  color: #ffffff;
+  color: #1100ff;
+ 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
