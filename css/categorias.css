@@ -6,7 +6,7 @@ html, body {
     font-family: Arial, sans-serif;
 }
 body {
-    background-image: url('../imagenes/fondos/fondo-index.avif');
+    background-image: url('../imagenes/fondos/fondo.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -404,7 +404,7 @@ footer {
 
  
 
-   /* 🧭 Centrado bajo el header fijo */
+  /* Centrado bajo el header fijo */
   position: fixed;
   top: 80px;                /* ajusta según la altura real del header */
   left: 50%;
@@ -433,7 +433,7 @@ footer {
 /* Página actual */
 .breadcrumb .actual {
   font-weight: bold;
-  color: #1100ff;
+  color: #2f66fd;
  
 }
 

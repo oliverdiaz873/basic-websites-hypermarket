@@ -6,7 +6,7 @@ html, body {
     font-family: Arial, sans-serif;
 }
 body {
-    background-image: url('../imagenes/fondos/fondo-index.avif');
+    background-image: url('../imagenes/fondos/fondo.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
