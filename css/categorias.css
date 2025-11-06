@@ -235,92 +235,8 @@ nav.menu a:hover {
     line-height: 1.6;
 }
 
-/* Sección Ofertas */
 
-.ofertas {
-    background-color: rgba(0,0,0,0.8);
-    padding: 30px 20px;
-    color: #222;
-    max-width: 1200px;  /* ancho máximo deseado */
-    margin: 0 auto;     /* centra horizontalmente */
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-sizing: border-box;
-}
-
-.ofertas .productos-container {
-    display: flex;             /* coloca las ofertas en fila */
-    gap: 20px;                 /* espacio entre ofertas */
-    overflow-x: auto;          /* permite scroll horizontal */
-    scroll-behavior: smooth;   /* animación suave al hacer scroll */
-    padding: 0 20px; /* espacio a los lados */
-
-}
-
-/* estilos del scrollbar */
-
-.ofertas .productos-container::-webkit-scrollbar-thumb {
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 4px;
-}
-.ofertas .productos-container::-webkit-scrollbar-track {
-    background-color: rgba(0,0,0,0.2);
-}
-
-/* Para Firefox */
-.ofertas .productos-container {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255,255,255,0.5) rgba(0,0,0,0.2);
-}
-
-
-.ofertas h2 {
-    font-size: 27px;
-    color: white;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    display: inline-block; /* ajusta el fondo al texto */
-    margin-bottom: 30px;
-}
-
-.oferta-item {  /* tarjeta de oferta */
-    display: inline-block;
-    background-color: #ffffff;
-    border-radius: 12px;
-    margin: 10px;
-    padding: 18px;
-    width: 200px;
-    vertical-align: top;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-    flex: 0 0 auto;
-
-}
-
-.oferta-item:hover {
-    transform: scale(1.05);
-}
-
-.oferta-item img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.oferta-item h3 {
-    margin-top: 10px;
-    color: #333;
-}
-
-.oferta-item p {
-    color: #555;
-    font-size: 0.95em;
-}
-
-
-/* Sección Productos Destacados */
+/* Sección Productos Destacados y ofertas */
 
 .productos-destacados {
     padding: 30px 20px;
@@ -330,6 +246,7 @@ nav.menu a:hover {
     margin: 0 auto;     /* centra horizontalmente */
     border-radius: 20px;
     height: 500px; /* alto fijo */
+    margin-bottom: 20px;
 }
 
 /* Título centrado con fondo negro transparente */
@@ -355,8 +272,6 @@ nav.menu a:hover {
 }
 
 
-
-
 /* Contenedor de productos para fila horizontal */
 .productos-destacados .productos-container {
     display: flex;             /* coloca productos en fila */
@@ -364,13 +279,10 @@ nav.menu a:hover {
     overflow-x: auto;          /* permite scroll horizontal */
     scroll-behavior: smooth;   /* animación suave al hacer scroll */
      padding: 0 20px; /* espacio a los lados */
-   
-
 }
 
 
 /* scrollbar */
-
 .productos-destacados .productos-container::-webkit-scrollbar-thumb {
     background-color: rgba(255,255,255,0.5);
     border-radius: 4px;
@@ -396,7 +308,6 @@ nav.menu a:hover {
 }
 
 
-
 /* Nombre del producto */
 .productos-destacados .producto h3 {
     margin: 0 0 10px 0;
@@ -407,6 +318,7 @@ nav.menu a:hover {
 .productos-destacados .producto p {
     margin: 0;
     font-size: 16px;
+    color:rgb(70, 69, 69)
 }
 
 /* Efecto al pasar el mouse */
@@ -473,49 +385,15 @@ footer {
 
 
 
-/* === Breadcrumb === */
-.breadcrumb {
-  display: inline-block; /* Se ajusta al contenido */
-  padding: 10px 20px;
-  font-size: 14px;
-  color: #555;
-  background-color: rgba(0,0,0,0.8);
-  padding: 10px 20px;
-  margin-top: 10px;
-  margin-left: 5px;
-  border-radius: 5px;
-}
-
-.breadcrumb a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.breadcrumb a:hover {
-  text-decoration: underline;
-  color: #1769aa;
-  text-decoration: underline;
-}
-
-.breadcrumb span {
-  font-weight: bold;
-  color: #ff0000;
-}
 
 
-.breadcrumb span {
-  color: #777;
-}
 
-/* Página actual */
-.breadcrumb .actual {
-  background-color: #2196f3;
-  color: white;
-  padding: 4px 10px;
-  border-radius: 6px;
-  font-weight: 600;
-}
+
+
+
+
+
+
 
 
 
