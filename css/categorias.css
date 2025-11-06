@@ -386,6 +386,42 @@ footer {
 
 
 
+/* Estilos generales del breadcrumb */
+.breadcrumb {
+  display: inline-block; /* el ancho se adapta al contenido */
+  background-color: rgba(0,0,0,0.8);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px;
+}
+
+/* Enlaces dentro del breadcrumb */
+.breadcrumb a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  color: #005999;
+  text-decoration: underline;
+}
+
+/* Separadores (›) */
+.breadcrumb span,
+.breadcrumb a {
+  margin: 0 5px;
+}
+
+/* Página actual */
+.breadcrumb .actual {
+  font-weight: bold;
+  color: #ffffff;
+}
 
 
 
