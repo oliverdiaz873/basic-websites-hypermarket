@@ -5,14 +5,21 @@ html, body {
     height: 100%;
     font-family: Arial, sans-serif;
 }
+
 body {
-    background-image: url('../imagenes/fondos/fondo.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     overflow-x: hidden;
+}
+
+
+/* Fondos */
+#fondo_muebles_y_decoracion {
+    background-image: url('../imagenes/fondos/fondo_m.jpg');
+
 }
 
 /* Header */
