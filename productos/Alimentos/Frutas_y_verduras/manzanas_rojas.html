@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-     <!--META ETIQUETAS-->
+    <!-- META ETIQUETAS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Hipermercado Superior: tu destino para compras inteligentes con la mejor selección de productos.">
+    <meta name="description" content="Compra Manzanas Rojas frescas en Hipermercado Superior. Frutas seleccionadas de la mejor calidad al mejor precio.">
     <meta name="author" content="Oliver Antonio Díaz"/>
-    <meta name="robots" content="index, follow">  
+    <meta name="robots" content="index, follow">
     <meta name="copyright" content="Oliver Antonio Díaz. Todos los derechos reservados.">
-    <meta name="theme-color" content="#2196f3">
+    <meta name="theme-color" content="#ff3b3b">
 
-    <!-- etiquetas Open Graph -->
-    <meta property="og:title" content="Hipermercado Superior - Todo lo que necesitas en un solo lugar">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.hipermercadosuperior.com"> <!--ejemplo de url local-->
-    <meta property="og:image" content="imagenes/logo.png"> 
-    <meta property="og:description" content="Hipermercado Superior: tu destino para compras inteligentes con la mejor selección de productos.">
+    <!-- Etiquetas Open Graph -->
+    <meta property="og:title" content="Manzanas Rojas | Hipermercado Superior">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://www.hipermercadosuperior.com/productos/manzanas-rojas.html">
+    <meta property="og:image" content="../imagenes/productos/Frutas/manzanas_rojas.jpg">
+    <meta property="og:description" content="Manzanas Rojas frescas, jugosas y deliciosas. Perfectas para tus comidas saludables. Encuéntralas en Hipermercado Superior.">
     <meta property="og:site_name" content="Hipermercado Superior">
-    <meta property="og:locale" content="es_ES"> 
+    <meta property="og:locale" content="es_ES">
 
-    <!--  Twitter Cards para X-->
+    <!-- Twitter Cards para X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hipermercado Superior - Todo lo que necesitas en un solo lugar">
-    <meta name="twitter:description" content="Tu destino para compras inteligentes con la mejor selección de productos.">
-    <meta name="twitter:image" content="https://www.hipermercadosuperior.com/imagenes/logo.png">
+    <meta name="twitter:title" content="Manzanas Rojas | Hipermercado Superior">
+    <meta name="twitter:description" content="Disfruta de Manzanas Rojas frescas y naturales en Hipermercado Superior. Calidad y sabor en cada mordida.">
+    <meta name="twitter:image" content="https://www.hipermercadosuperior.com/imagenes/productos/Frutas/manzanas_rojas.jpg">
 
-
-    <!-- Título, CSS y Fuentes-->
-    <title>Hipermercado Superior | Compras inteligentes y productos de calidad</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <!-- Título, CSS y Fuentes -->
+    <title>Manzanas Rojas | Hipermercado Superior</title>
+    <link rel="stylesheet" href="../../../css/productos.css">
+    <link rel="stylesheet" href="../css/fonts.css">
 
     <!-- Favicons -->
-    <link rel="icon" href="imagenes/iconos/favicon/icon-16x16.jpg" type="image/jpg" sizes="16x16">
-    <link rel="icon" href="imagenes/iconos/favicon/icon-32x32.jpg" type="image/jpg" sizes="32x32">
-    <link rel="icon" href="imagenes/iconos/favicon/icon-48x48.jpg" type="image/jpg" sizes="48x48">
- 
+    <link rel="icon" href="../imagenes/iconos/favicon/icon-16x16.jpg" type="image/jpg" sizes="16x16">
+    <link rel="icon" href="../imagenes/iconos/favicon/icon-32x32.jpg" type="image/jpg" sizes="32x32">
+    <link rel="icon" href="../imagenes/iconos/favicon/icon-48x48.jpg" type="image/jpg" sizes="48x48">
 </head>
 
 
@@ -45,14 +43,13 @@
 
 
 
+<body id="fondo_frutas">
 
 
-<body>
+ <header>
 
-     <header>
-
-       <a href="index.html" class="logo-header" aria-label="Ir a la página principal de Hipermercado Superior"> <!-- logo clickeable--> 
-        <img src="imagenes/logo/logo.jpeg" alt="logo Hipermercado Superior">
+       <a href="../../../index.html" class="logo-header" aria-label="Ir a la página principal de Hipermercado Superior"> <!-- logo clickeable--> 
+        <img src="../../../imagenes/logo/logo.jpeg" alt="logo Hipermercado Superior">
         <h1>Hipermercado Superior</h1>
        </a>
 
@@ -63,10 +60,10 @@
                    <li><a href="#">Inicio</a></li>
 
                <!-- Nivel 1: Categorías -->
-                   <li><a href="#">Categorías</a>
+                   <li><a href="">Categorías</a>
                        <ul>
                           <!-- Nivel 2: Alimentos -->
-                             <li><a href="categorias/Alimentos.html">Alimentos</a>
+                             <li><a href="../../../categorias/Alimentos.html">Alimentos</a>
                        <ul>
                             <!-- Nivel 3: Frutas y Verduras -->
                               <li><a href="#">Frutas y Verduras</a></li>
@@ -261,178 +258,111 @@
 </header>
 
 
+<!-- Breadcrumb o indicador de ubicación -->
+<nav class="breadcrumb">
 
-       
-     <main> <!--main-->
+  <a href="../../../index.html">Inicio</a> ›
+  <span>Categorías</span> ›
+  <a href="../../../categorias/Alimentos.html">Alimentos</a> ›
+  <span>Frutas y Verduras</span> ›
+  <span class="actual">Manzanas Rojas</span>
 
-          <!-- Sección: Productos Destacados -->
-          <section class="productos-destacados">
-             <h2>Productos Destacados</h2>
-
-             <div class="productos-container">
-
-               <!-- Producto 1 -->
-                 <div class="producto">
-                   <img src="imagenes/productos/Tecnologia/Televisores/TV_led_samsung.avif" alt="televisor Samsung 75 pulgadas">
-                   <h3>Televisor samsung 75 pulgadas</h3>
-                   <p>Precio: $65,000</p>
-                 </div>
-
-               <!-- Producto 2 -->
-
-               <div class="producto">
-                   <img src="imagenes/productos/Electrodomesticos/cocina/Neveras/Nevera_LG.avif" alt="Nevera LG">
-                   <h3>Nevera LG</h3>
-                   <p>Precio: $80,000</p>
-                 </div>
-                 
-
-               <!-- Producto 3 -->
-
-                <div class="producto">
-                   <img src="imagenes/productos/Electrodomesticos/climatizacion/ventiladores/ventilador_Daiwa.avif" alt="Ventilador Daiwa">
-                   <h3>Ventilador Daiwa</h3>
-                   <p>Precio: $3,000</p>
-                 </div>
-                
-                 <!-- Producto 4 -->
-
-                  <div class="producto">
-                   <img src="imagenes/productos/Muebles y decoracion/sofa/sofa cama blanco.avif" alt="Nevera LG">
-                   <h3>Sofa cama blanco</h3>
-                   <p>Precio: $80,000</p>
-                 </div>
-
-                    <!-- Producto 5 -->
-
-                  <div class="producto">
-                   <img src="imagenes/productos/Alimentos/carnes_pescados_mariscos/res/carne_de_res.avif" alt="Nevera LG">
-                   <h3>carne de res para hamburguesa</h3>
-                   <p>Precio: $80,000</p>
-                 </div>
-
-                     <!-- Producto 6 -->
-
-                  <div class="producto">
-                   <img src="imagenes/productos/Alimentos/carnes_pescados_mariscos/pollo/pollo.avif" alt="pollo">
-                   <h3>Pollo entero don pollo</h3>
-                   <p>1LB $79</p>
-                 </div>
-
-                  
-            </div>
-      </section>
+</nav>
 
 
 
 
-         <!-- Sección: Ofertas -->
-<section class="productos-destacados">
-    <h2>Ofertas de la Semana</h2>
-    <div class="productos-container">
 
-        <div class="producto">
-            <img src="imagenes/productos/Alimentos/frutas y verduras/manzana verde.avif" alt="Descuento en manzanas verdes">
-            <h3>Manzanas Verdes -20%</h3>
-            <p>
-                Antes: <span class="precio-antiguo">RD$ 120.00</span>
-                <span class="flecha">→</span>
-                <span class="precio-nuevo">Ahora: RD$ 96.00</span>
-            </p>
-        </div>
 
-        <div class="producto">
-            <img src="imagenes/productos/Alimentos/lacteos_y_huevos/huevos/huevos_30unidades.avif" alt="huevos en oferta">
-            <h3>Huevos -10%</h3>
-            <p>
-                Antes: <span class="precio-antiguo">RD$ 260.00</span>
-                <span class="flecha">→</span>
-                <span class="precio-nuevo">Ahora: RD$ 234.00</span>
-            </p>
-        </div>
+  <main class="producto-main">
 
-        <div class="producto">
-            <img src="imagenes/productos/Electrodomesticos/cocina/freezer/freezer_7pies.avif" alt="freezer en oferta">
-            <h3>Freezer 7 pies -15%</h3>
-            <p>
-                Antes: <span class="precio-antiguo">RD$ 29,000.00</span>
-                <span class="flecha">→</span>
-                <span class="precio-nuevo">Ahora: RD$ 24,650.00</span>
-            </p>
-        </div>
+      <section class="producto-detalle">
 
-        <div class="producto">
-            <img src="imagenes/productos/Tecnologia/Celulares/celular_samsung_A26.avif" alt="oferta en celulares samsung">
-            <h3>Celular Samsung A26 -10%</h3>
-            <p>
-                Antes: <span class="precio-antiguo">RD$ 12,000.00</span>
-                <span class="flecha">→</span>
-                <span class="precio-nuevo">Ahora: RD$ 10,800.00</span>
-            </p>
-        </div>
+        <div class="contenedor-producto"> <!-- Contenedor del producto -->
 
-        <div class="producto">
-            <img src="imagenes/productos/Electrodomesticos/cocina/Cilindros_de_gas/cilindro_de_gas_duragas.avif" alt="descuento en cilindros de gas">
-            <h3>Cilindros de Gas -15%</h3>
-            <p>
-                Antes: <span class="precio-antiguo">RD$ 1,500.00</span>
-                <span class="flecha">→</span>
-                <span class="precio-nuevo">Ahora: RD$ 1,275.00</span>
-            </p>
-        </div>
+    <div class="imagen-producto"> <!-- Imagen del producto -->
+        <img src="../../../imagenes/productos/Alimentos/frutas y verduras/manzana roja.avif" alt="Manzanas Rojas">
+    </div>
+
+    <div class="info-producto"> <!-- Información del producto -->
+        <h2>Manzanas Rojas</h2>
+        <p class="precio">$65.00 / kg</p>
+
+        <p class="descripcion">
+            Las <strong>manzanas rojas</strong> son una deliciosa fruta fresca, jugosa y naturalmente dulce.
+            Ideales para consumir al natural, en postres o jugos. 
+            Su pulpa crujiente y su sabor equilibrado las convierten en una opción saludable para toda la familia.
+        </p>
+
+        <ul class="detalles">
+            <li>Tipo: Fruta fresca</li>
+            <li>Origen: Nacional</li>
+            <li>Peso aproximado: 1 kg</li>
+            <li>Conservación: Mantener en lugar fresco y seco</li>
+            <li>Beneficios: Fuente natural de fibra y vitamina C</li>
+        </ul>
 
     </div>
-</section>
+</div>
+
+          
+    </section>
+
+    <!-- ===================== PRODUCTOS SIMILARES ===================== -->
+    <section class="productos-similares">
+      <h2>Productos Similares</h2>
+
+      <div class="productos-container">
+
+        <div class="producto">
+            <img src="../../../imagenes/productos/Alimentos/frutas y verduras/manzana verde.avif" alt="Manzanas verdes">
+            <h3>Manzanas verdes</h3>
+            <p>Precio: $45</p>
+        </div>
+
+        <div class="producto">
+           <img src="../../../imagenes/productos/Alimentos/frutas y verduras/manzana_amarilla.avif" alt="Manzanas amarilla">
+           <h3>Manzanas amarillas</h3>
+           <p>Precio: $50</p>
+        </div>
+
+        <div class="producto">
+          <img src="../../../imagenes/productos/Alimentos/frutas y verduras/fresas.avif" alt="paquete de fresas">
+          <h3>paquete de Fresas</h3>
+          <p>Precio: $350</p>
+        </div>
+
+        <div class="producto">
+           <img src="../../../imagenes/productos/Alimentos/frutas y verduras/uva_morada.avif" alt="Uvas moradas">
+           <h3>Uvas Moradas</h3>
+           <p>Precio: $150</p>
+        </div>
+
+        <div class="producto">
+             <img src="../../../imagenes/productos/Alimentos/frutas y verduras/mandarinas.avif" alt="Mandarinas">
+             <h3>Mandarinas</h3>
+             <p>Precio: $150</p>
+        </div>
 
 
+      </div>
+    </section>
+  </main>
 
-        <!-- Sección: Sobre Nosotros -->
-        <section class="sobre-nosotros">
-             <div class="contenedor">
-               <img src="imagenes/logo/logo.jpeg" alt="logo del Hipermercado Superior">
-                 <div class="texto">
-                  <h2>Sobre Nosotros</h2>
-                  <p>En <strong>Hipermercado Superior</strong> trabajamos para ofrecerte calidad, variedad y precios justos. 
-                  Nuestro compromiso es brindarte la mejor experiencia de compra tanto en tienda física como online.</p>
-                 </div>
-             </div>
-        </section>
-
-    </main>
-
-
-    <footer> <!--footer-->
-        
-         <div class="footer-content">
-              <!-- Derechos reservados -->
-              <small>&copy; 2025 Hipermercado Superior. Todos los derechos reservados.</small>
-
-              <!-- Íconos de redes sociales -->
-              <div class="social-icons">
-                   <a href="https://facebook.com/tuweb" target="_blank" rel="nofollow noopener noreferrer" aria-label="Visítanos en Facebook">
-                    <img src="imagenes/iconos/redes/facebook.png" alt="ir a facebook de Hipermercado Superior">
-                   </a>
-
-                   <a href="https://twitter.com/tuweb" target="_blank" rel="nofollow noopener noreferrer" aria-label="Visítanos en X (antes Twitter)">
-                    <img src="imagenes/iconos/redes/x.png" alt="ir a x de Hipermercado Superior">
-                   </a>
-
-                   <a href="https://instagram.com/tuweb" target="_blank" rel="nofollow noopener noreferrer" aria-label="Visítanos en Instagram">
-                    <img src="imagenes/iconos/redes/instagram.png" alt="ir a instagram de Hipermercado Superior">
-                   </a>
-              </div>
-
-                 <!-- Enlaces legales -->
-                <div class="footer-links">
-                  <a href="legal/privacy.html" title="Política de Privacidad">Política de Privacidad</a> |
-                  <a href="legal/terms.html" title="Términos de Uso">Términos de Uso</a>
-                </div>
-            </div>
-
-    </footer>
+  <footer>
+    <div class="footer-content">
+      <small>&copy; 2025 Hipermercado Superior. Todos los derechos reservados.</small>
+      <div class="social-icons">
+        <a href="#"><img src="../../../imagenes/iconos/redes/facebook.png" alt="facebook"></a>
+        <a href="#"><img src="../../../imagenes/iconos/redes/x.png" alt="x"></a>
+        <a href="#"><img src="../../../imagenes/iconos/redes/instagram.png" alt="instagram"></a>
+      </div>
+      <div class="footer-links">
+        <a href="../legal/privacy.html">Política de Privacidad</a> |
+        <a href="../legal/terms.html">Términos de Uso</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
-
-
-
 </html>

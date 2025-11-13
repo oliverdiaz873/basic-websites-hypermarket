@@ -1,3 +1,4 @@
+
 /* Reset básico */
 html, body {
     margin: 0;
@@ -5,14 +6,21 @@ html, body {
     height: 100%;
     font-family: Arial, sans-serif;
 }
+
 body {
-    background-image: url('../imagenes/fondos/fondo.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     overflow-x: hidden;
+}
+
+
+/* Fondos */
+#fondo_frutas {
+    background-image: url('../imagenes/fondos/fondo.avif');
+
 }
 
 /* Header */
@@ -64,25 +72,83 @@ header a.logo-header h1 {
 
 main {
     text-align: center;
-    margin-top: 120px; /* separacion ideal del main y el header fijo*/
+    margin-top: 160px; /* separacion ideal del main y el header fijo*/
 }
 
-/* tarjeta de producto */
+/* section */
+.producto-detalle {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+}
 
-.producto {    
-    display: inline-block;
-    background-color: rgba(255,255,255,0.8);
-    color: black;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
-    vertical-align: top;
+
+/* div */
+.contenedor-producto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
 }
-.producto img {
-    width: 100%;
-    border-radius: 10px;
+
+.imagen-producto img {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
+
+.info-producto {
+  max-width: 500px;
+  text-align: left;
+}
+
+.info-producto h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-size: 24px;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.detalles {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.detalles li {
+  margin-bottom: 8px;
+}
+
+.btn-comprar {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #e68900;
+}
+
 
 
 /* nav */
@@ -197,159 +263,6 @@ nav.menu a:hover {
 
 /* ========================== SECCIONES ========================== */
     
-/* Sección Sobre Nosotros */
-
-.sobre-nosotros {
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    color: #fff;              
-    padding: 20px 0;
-}
-
-.sobre-nosotros .contenedor {
-    display: flex;
-    align-items: center;       /* centra verticalmente imagen y texto */
-    justify-content: center;   /* centra todo el conjunto */
-    gap: 60px;                 /* espacio entre imagen y texto */
-}
-
-.sobre-nosotros img {
-    width: 450px;
-    height: auto;
-    border-radius: 15px;
-    flex-shrink: 0;
-}
-
-.sobre-nosotros .texto {
-    max-width: 600px;
-    text-align: left;
-}
-
-.sobre-nosotros h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
-}
-
-.sobre-nosotros p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-
-/* Sección Productos Destacados y ofertas */
-
-.productos-destacados {
-    padding: 30px 20px;
-    box-sizing: border-box;
-    background-color: rgba(0,0,0,0.8);
-    max-width: 1200px;  /* ancho máximo deseado */
-    margin: 0 auto;     /* centra horizontalmente */
-    border-radius: 20px;
-    height: 500px; /* alto fijo */
-    margin-bottom: 20px;
-}
-
-/* Título centrado con fondo negro transparente */
-.productos-destacados h2 {
-    font-size: 28px;
-    color: white;
-    padding: 1px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    display: inline-block; /* ajusta el fondo al texto */
-    margin-bottom: 30px;
-}
-
-/* tarjeta de productos */
-.productos-destacados .producto {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    padding: 18px;
-    border-radius: 10px;
-    width: 200px;
-    transition: transform 0.3s, box-shadow 0.3s;
-     flex: 0 0 auto; /* evita que se encojan */
-}
-
-
-/* Contenedor de productos para fila horizontal */
-.productos-destacados .productos-container {
-    display: flex;             /* coloca productos en fila */
-    gap: 20px;                 /* espacio entre productos */
-    overflow-x: auto;          /* permite scroll horizontal */
-    scroll-behavior: smooth;   /* animación suave al hacer scroll */
-     padding: 0 20px; /* espacio a los lados */
-}
-
-
-/* scrollbar */
-.productos-destacados .productos-container::-webkit-scrollbar-thumb {
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 4px;
-}
-.productos-destacados .productos-container::-webkit-scrollbar-track {
-    background-color: rgba(0,0,0,0.2);
-}
-
-/* Para Firefox */
-.productos-destacados .productos-container {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255,255,255,0.5) rgba(0,0,0,0.2);
-}
-
-/* ------------------------------------------------------------------------------- */
-
-
-/* Imagen del producto */
-.productos-destacados .producto img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-
-/* Nombre del producto */
-.productos-destacados .producto h3 {
-    margin: 0 0 10px 0;
-    font-size: 18px;
-}
-
-/* Precio del producto */
-.productos-destacados .producto p {
-    margin: 0;
-    font-size: 16px;
-    color:rgb(70, 69, 69)
-}
-
-/* Efecto al pasar el mouse */
-.productos-destacados .producto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-/* --- Estilos para precios de ofertas --- */
-
-.precio-antiguo {
-    text-decoration: line-through;
-     color:rgb(70, 69, 69);
-    margin-right: 5px;
-    font-size: 0.95rem;
-}
-
-.precio-nuevo {
-    font-weight: bold;
-    color: #28a745; /* verde para indicar oferta */
-    font-size: 1rem;
-}
-
-.flecha {
-    margin: 0 5px;
-    color: #555;
-    font-weight: bold;
-}
-
-
 
 
 /* Aseguramos que las secciones ocupen todo el ancho */
@@ -362,6 +275,10 @@ section {
 section > * {
     margin: 0 auto;  
 }
+
+
+
+
 
 
 /* footer */
@@ -412,6 +329,52 @@ footer {
 
 
 
+/* Estilos generales del breadcrumb */
+.breadcrumb {
+  display: inline-block; /* el ancho se adapta al contenido */
+  background-color: rgba(0,0,0,0.8);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px;
+
+ 
+
+  /* Centrado bajo el header fijo */
+  position: fixed;
+  top: 80px;                /* ajusta según la altura real del header */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+/* Enlaces dentro del breadcrumb */
+.breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+   background-color: rgba(255,255,255,0.2);
+}
+
+/* Separadores (›) */
+.breadcrumb span,
+.breadcrumb a {
+  margin: 0 5px;
+}
+
+/* Página actual */
+.breadcrumb .actual {
+  font-weight: bold;
+  color: #2f66fd;
+ 
+}
 
 
 
@@ -421,13 +384,110 @@ footer {
 
 
 
+/* Sección Productos Destacados y ofertas */
+
+.productos-similares {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.8);
+    max-width: 1200px;  /* ancho máximo deseado */
+    margin: 0 auto;     /* centra horizontalmente */
+    border-radius: 20px;
+    height: 500px; /* alto fijo */
+    margin-bottom: 20px;
+}
+
+/* Título centrado con fondo negro transparente */
+.productos-similares h2 {
+    font-size: 28px;
+    color: white;
+    padding: 1px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    display: inline-block; /* ajusta el fondo al texto */
+    margin-bottom: 30px;
+}
+
+/* tarjeta de productos */
+.productos-similares .producto {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 18px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+     flex: 0 0 auto; /* evita que se encojan */
+}
 
 
+/* Contenedor de productos para fila horizontal */
+.productos-similares .productos-container {
+    display: flex;             /* coloca productos en fila */
+    gap: 20px;                 /* espacio entre productos */
+    overflow-x: auto;          /* permite scroll horizontal */
+    scroll-behavior: smooth;   /* animación suave al hacer scroll */
+     padding: 0 20px; /* espacio a los lados */
+}
 
 
+/* scrollbar */
+.productos-similares .productos-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 4px;
+}
+.productos-similares .productos-container::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* Para Firefox */
+.productos-similares .productos-container {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.5) rgba(0,0,0,0.2);
+}
+
+/* ------------------------------------------------------------------------------- */
 
 
+/* Imagen del producto */
+.productos-similares .producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
 
+/* Nombre del producto */
+.productos-similares .producto h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
 
+/* Precio del producto */
+.productos-similares .producto p {
+    margin: 0;
+    font-size: 16px;
+    color:rgb(70, 69, 69)
+}
 
+/* Efecto al pasar el mouse */
+.productos-similares .producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* tarjeta de producto */
+
+.producto {    
+    display: inline-block;
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    vertical-align: top;
+}
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
