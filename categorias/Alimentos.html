@@ -39,24 +39,15 @@
  
 </head>
 
-
-
-
-
-
-
-
-
-<body id="fondo_Alimentos">
+<body id="fondo_alimentos">
 
      <header>
 
        <a href="../index.html" class="logo-header" aria-label="Ir a la página principal de Hipermercado Superior"> <!-- logo clickeable--> 
-        <img src="../imagenes/logo/logo.jpeg" alt="logo Hipermercado Superior">
+        <img src="../imagenes/logo/logo.jpeg" alt="logo de Hipermercado Superior">
         <h1>Hipermercado Superior</h1>
        </a>
 
-       
        <nav class="menu"> <!--barra de navegacion-->
          <ul>
                <!-- Nivel 1 -->
@@ -69,10 +60,10 @@
                              <li><a href="#">Alimentos</a>
                        <ul>
                             <!-- Nivel 3: Frutas y Verduras -->
-                              <li><a href="#">Frutas y Verduras</a></li>
+                              <li><a href="#frutas_y_verduras">Frutas y Verduras</a></li>
                                  
                             <!-- Nivel 3: Despensa -->
-                               <li><a href="#">Despensa</a>
+                               <li><a href="#despensa">Despensa</a>
                                   <ul>
                                     <li><a href="#">aceites</a></li>
                                     <li><a href="#">Tomate</a></li>
@@ -80,7 +71,7 @@
                                   </ul>
                                </li>
                         <!-- Nivel 3: Carnes, Pescados y Mariscos -->
-                        <li><a href="#">Carnes, Pescados y Mariscos</a>
+                        <li><a href="#carnes_pescados_mariscos">Carnes, Pescados y Mariscos</a>
                             <ul>
                                 <li><a href="#">Res</a></li>
                                 <li><a href="#">Pollo</a></li>
@@ -88,7 +79,7 @@
                             </ul>
                         </li>
                         <!-- Nivel 3: Lácteos -->
-                        <li><a href="#">Lácteos</a>
+                        <li><a href="#lacteos_y_huevos">Lácteos y Huevos</a>
                             <ul>
                                 <li><a href="#">Leche</a></li>
                                 <li><a href="#">Quesos</a></li>
@@ -96,7 +87,7 @@
                             </ul>
                         </li>
                         <!-- Nivel 3: Bebidas -->
-                        <li><a href="#">Bebidas</a>
+                        <li><a href="#bebidas">Bebidas</a>
                             <ul>
                                 <li><a href="#">Jugos</a></li>
                                 <li><a href="#">Refrescos</a></li>
@@ -104,7 +95,7 @@
                             </ul>
                         </li>
                         <!-- Nivel 3: Enlatados -->
-                        <li><a href="#">Enlatados</a>
+                        <li><a href="#enlatados">Enlatados</a>
                             <ul>
                                 <li><a href="#">Sopas</a></li>
                                 <li><a href="#">Verduras</a></li>
@@ -252,7 +243,7 @@
             </ul>
         </li>
         <!-- Nivel 1 -->
-        <li><a href="#">Ofertas</a></li>
+        <li><a href="../index.html#ofertas">Ofertas</a></li>
         <li><a href="#">Contacto</a></li>
     </ul>
 </nav>
@@ -270,154 +261,153 @@
      <main> <!--main-->
 
           <!-- Sección: Frutas y verduras -->
-          <section class="productos-destacados">
+          <section class="productos-destacados destino" id="frutas_y_verduras">  <!-- la clase destino centra con margin top la seccion cuando la visitamos-->
              <h2>Frutas y verduras</h2>
 
              <div class="productos-container">
 
                <!-- Producto 1 -->
                 <a href="../productos/Alimentos/Frutas_y_verduras/manzanas_rojas.html">
-                  <div class="producto">
-                    <img src="../imagenes/productos/Alimentos/frutas y verduras/manzana roja.avif" alt="televisor Samsung 75 pulgadas">
-                    <h3>Televisor samsung 75 pulgadas</h3>
-                    <p>Precio: $65,000</p>
-                  </div>
+                  <article class="producto">
+                    <img src="../imagenes/productos/Alimentos/frutas_y_verduras/manzana_roja.avif" alt="manzanas rojas">
+                    <h3>Manzanas rojas</h3>
+                    <p>Precio: $65 1KG</p>
+                  </article>
                 </a>
 
                <!-- Producto 2 -->
 
-               <div class="producto">
-                   <img src="../imagenes/productos/Alimentos/frutas y verduras/manzana verde.avif" alt="Manzanas verdes">
+               <article class="producto">
+                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/manzana_verde.avif" alt="Manzanas verdes">
                    <h3>Manzanas verdes</h3>
-                   <p>Precio: $45</p>
-                 </div>
+                   <p>Precio: $45 1KG</p>
+               </article>
                  
 
                <!-- Producto 3 -->
                 
-                <div class="producto">
-                   <img src="../imagenes/productos/Alimentos/frutas y verduras/pepino.avif" alt="Lavadora y Secadora Tecnomaster">
-                   <h3>Lavadora y Secadora Tecnomaster</h3>
-                   <p>Precio: $33,000</p>
-                 </div>
+                <article class="producto">
+                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/pepino.avif" alt="Lavadora y Secadora Tecnomaster">
+                   <h3>Pepinos</h3>
+                   <p>Precio: $70 1KG</p>
+                </article>
 
 
                <!-- Producto 4 -->
 
-                <div class="producto">
-                   <img src="../imagenes/productos/Alimentos/frutas y verduras/Limon persa.avif" alt="Ventilador Daiwa">
-                   <h3>Ventilador Daiwa</h3>
-                   <p>Precio: $3,000</p>
-                 </div>
+                <article class="producto">
+                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/Limon_persa.avif" alt="Ventilador Daiwa">
+                   <h3>Limones Persa</h3>
+                   <p>Precio: $200 1KG</p>
+                </article>
                 
 
 
-                  <div class="producto">
-                   <img src="../imagenes/productos/Alimentos/frutas y verduras/cebolla roja.avif" alt="Nevera LG">
-                   <h3>Nevera LG</h3>
-                   <p>Precio: $80,000</p>
-                 </div>
+                  <article class="producto">
+                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/cebolla_roja.avif" alt="Cebollas rojas">
+                   <h3>Cebollas rojas</h3>
+                   <p>Precio: $170 1KG</p>
+                  </article>
 
-                  <div class="producto">
-                   <img src="../imagenes/productos/Alimentos/frutas y verduras/tomate de ensalada.avif" alt="Nevera LG">
-                   <h3>Nevera LG</h3>
-                   <p>Precio: $80,000</p>
-                 </div>
+                  <article class="producto">
+                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/tomate_de_ensalada.avif" alt="Tomates de ensalada">
+                   <h3>Tomates de ensalada</h3>
+                   <p>Precio: $80 1KG</p>
+                  </article>
 
-                  <div class="producto">
-                   <img src="../imagenes/productos/Alimentos/frutas y verduras/Ajies morron.avif" alt="Ajies morron">
+                  <article class="producto">
+                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/Ajies_morron.avif" alt="Ajies morron">
                    <h3>Ajies morrones</h3>
-                   <p>Precio: $80,000</p>
-                 </div>
+                   <p>Precio: $80 la unidad</p>
+                  </article>
 
-                  <div class="producto">
-                   <img src="../imagenes/productos/Alimentos/frutas y verduras/zanahoria.avif" alt="Nevera LG">
+                  <article class="producto">
+                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/zanahoria.avif" alt="Zanahorias">
                    <h3>Zanahorias</h3>
-                   <p>Precio: $80,000</p>
-                 </div>
+                   <p>Precio: $80 1KG</p>
+                 </article>
               
-                  <div class="producto">
-                   <img src="../../../imagenes/productos/Alimentos/frutas y verduras/manzana_amarilla.avif" alt="Manzanas amarilla">
+                  <article class="producto">
+                   <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/manzana_amarilla.avif" alt="Manzanas amarilla">
                    <h3>Manzanas amarillas</h3>
-                   <p>Precio: $50</p>
-                  </div>
+                   <p>Precio: $50 1KG</p>
+                  </article>
 
-                  <div class="producto">
-                    <img src="../imagenes/productos/Alimentos/frutas y verduras/fresas.avif" alt="paquete de fresas">
+                  <article class="producto">
+                    <img src="../imagenes/productos/Alimentos/frutas_y_verduras/fresas.avif" alt="paquete de fresas">
                     <h3>paquete de Fresas</h3>
-                    <p>Precio: $350</p>
-                  </div>
+                    <p>Precio: $350 el paquete</p>
+                  </article>
 
-                  <div class="producto">
-                    <img src="../imagenes/productos/Alimentos/frutas y verduras/uva_morada.avif" alt="Uvas moradas">
+                  <article class="producto">
+                    <img src="../imagenes/productos/Alimentos/frutas_y_verduras/uva_morada.avif" alt="Uvas moradas">
                     <h3>Uvas Moradas</h3>
-                    <p>Precio: $150</p>
-                  </div>
+                    <p>Precio: $150 1KG</p>
+                  </article>
 
-                  <div class="producto">
-                    <img src="../imagenes/productos/Alimentos/frutas y verduras/mandarinas.avif" alt="Mandarinas">
+                  <article class="producto">
+                    <img src="../imagenes/productos/Alimentos/frutas_y_verduras/mandarinas.avif" alt="Mandarinas">
                     <h3>Mandarinas</h3>
-                    <p>Precio: $150</p>
-                  </div>
-
+                    <p>Precio: $150 1KG</p>
+                  </article>
 
 
             </div>
+
       </section>
 
 
        <!-- Sección: Carnes, Pescados y Mariscos-->
-          <section class="productos-destacados">
+          <section class="productos-destacados destino" id="carnes_pescados_mariscos">
              <h2>Carnes, Pescados y Mariscos</h2>
 
              <div class="productos-container">
 
                <!-- Producto 1 -->
-                 <div class="producto">
+                 <article class="producto">
                    <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/pescado/tilapia_roja.avif" alt="televisor Samsung 75 pulgadas">
                    <h3>tilapia roja</h3>
                    <p>Precio: $65,000</p>
-                 </div>
+                 </article>
 
                <!-- Producto 2 -->
 
-               <div class="producto">
+               <article class="producto">
                    <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/mariscos/camarones_pre-cocidos.avif" alt="Nevera LG">
                    <h3>camarones pre-cocidos</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
                  
 
                <!-- Producto 3 -->
                 
-                <div class="producto">
+                <article class="producto">
                    <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/mariscos/camarones_crudos.avif" alt="Lavadora y Secadora Tecnomaster">
                    <h3>camarones crudos</h3>
                    <p>Precio: $33,000</p>
-                 </div>
-
+                 </article>
 
                <!-- Producto 4 -->
 
-                <div class="producto">
+                <article class="producto">
                    <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/pollo/pollo.avif" alt="Ventilador Daiwa">
                    <h3>pollo Don Pollo</h3>
                    <p>Precio: $3,000</p>
-                 </div>
+                 </article>
                 
 
 
-                  <div class="producto">
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/res/carne_de_res.avif" alt="Nevera LG">
                    <h3>carne de res para hamburguesas</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
-                  <div class="producto">
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/cerdo/chuleta_de_cerdo.avif" alt="Nevera LG">
                    <h3>chuleta de cerdo</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
                 
             </div>
@@ -426,186 +416,182 @@
 
 
 
-       <!-- Despensa -->
-          <section class="productos-destacados">
+       <!-- Sección: Despensa -->
+          <section class="productos-destacados destino" id="despensa">
              <h2>Despensa</h2>
 
              <div class="productos-container">
 
                <!-- Producto 1 -->
-                 <div class="producto">
+                 <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Despensa/condimentos/sal_marina_refisal.avif" alt="televisor Samsung 75 pulgadas">
                    <h3>Sal marina refisal</h3>
                    <p>Precio: $65,000</p>
-                 </div>
-
+                 </article>
                <!-- Producto 2 -->
 
-               <div class="producto">
+               <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Despensa/condimentos/sazon_completo_maggi.avif" alt="Nevera LG">
                    <h3>Sazon completo Maggi</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
                  
 
                <!-- Producto 3 -->
                 
-                <div class="producto">
+                <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Despensa/condimentos/sopita_doña_gallina.avif" alt="Lavadora y Secadora Tecnomaster">
                    <h3>Sopita Doña gallina</h3>
                    <p>Precio: $33,000</p>
-                 </div>
+                </article>
 
 
                <!-- Producto 4 -->
 
-                <div class="producto">
+                <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Despensa/aceites/aceite_crisol.avif" alt="Ventilador Daiwa">
                    <h3>Aceite Crisol</h3>
                    <p>Precio: $3,000</p>
-                 </div>
+                 </article>
                 
 
 
-                  <div class="producto">
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Despensa/condimentos/vinagre_baldom.avif" alt="Nevera LG">
                    <h3>Vinagre Baldom</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
-                  <div class="producto">
+
+
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Despensa/aceites/aceite_de_oliva_extra_virgen.avif" alt="Nevera LG">
                    <h3>Aceite de oliva extra virgen</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
-                  <div class="producto">
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Despensa/aderezos_y_salsas/mayonesa_baldom.avif" alt="Nevera LG">
                    <h3>Mayonesa Baldom</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
             </div>
+
       </section>
 
 
 
-        <!-- Lácteos -->
-          <section class="productos-destacados">
+        <!-- Sección: Lácteos -->
+          <section class="productos-destacados destino" id="lacteos_y_huevos">
              <h2>Lácteos y Huevos</h2>
 
              <div class="productos-container">
 
                <!-- Producto 1 -->
-                 <div class="producto">
+                 <article class="producto">
                    <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/leche/leche_entera_rica.avif" alt="televisor Samsung 75 pulgadas">
                    <h3>Leche entera rica</h3>
                    <p>Precio: $65,000</p>
-                 </div>
+                 </article>
 
                <!-- Producto 2 -->
 
-               <div class="producto">
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/huevos/huevos_30unidades.avif" alt="Nevera LG">
                    <h3>Huevos 30 unidades</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
                  
 
                <!-- Producto 3 -->
                 
-                <div class="producto">
+                <article class="producto">
                    <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/queso/queso_gorgonzola.avif" alt="Lavadora y Secadora Tecnomaster">
                    <h3>Queso gorgonzola</h3>
                    <p>Precio: $33,000</p>
-                 </div>
-
+                 </article>
 
                <!-- Producto 4 -->
 
-                <div class="producto">
+                <article class="producto">
                    <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/queso/queso_gouda.avif" alt="Ventilador Daiwa">
                    <h3>Queso gouda</h3>
                    <p>Precio: $3,000</p>
-                 </div>
+                 </article>
                 
-
-
-                  <div class="producto">
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/yogurt/yogurt_de_fresa.avif" alt="Nevera LG">
                    <h3>Yogurt de fresa</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
-                  <div class="producto">
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/yogurt/yogurt_natural.avif" alt="Nevera LG">
                    <h3>Yogurt natural</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
                   
             </div>
       </section>
 
 
-       <!-- Bebidas-->
-          <section class="productos-destacados">
+       <!--Sección: Bebidas-->
+          <section class="productos-destacados destino" id="bebidas">
              <h2>Bebidas</h2>
 
              <div class="productos-container">
 
                <!-- Producto 1 -->
-                 <div class="producto">
+                 <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Bebidas/energizantes/gatorade_uva.avif" alt="televisor Samsung 75 pulgadas">
                    <h3>Gatorade Uva</h3>
                    <p>Precio: $65,000</p>
-                 </div>
-
+                 </article>
+                 
                <!-- Producto 2 -->
 
-               <div class="producto">
+               <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Bebidas/energizantes/red_bull.avif" alt="Nevera LG">
                    <h3>Red Bull</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
                  
 
                <!-- Producto 3 -->
                 
-                <div class="producto">
+                <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Bebidas/jugo/jugo_naranja_rica.avif" alt="Lavadora y Secadora Tecnomaster">
                    <h3>Jugo de Naranja Rica</h3>
                    <p>Precio: $33,000</p>
-                 </div>
-
+                 </article>
 
                <!-- Producto 4 -->
 
-                <div class="producto">
+                <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Bebidas/jugo/jugo_pera_santal.avif" alt="Ventilador Daiwa">
                    <h3>Jugo de Pera Santal</h3>
                    <p>Precio: $3,000</p>
-                 </div>
+                 </article>
                 
-
-
-                  <div class="producto">
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Bebidas/refresco/coca_cola.avif" alt="Nevera LG">
                    <h3>Coca Cola</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
-                  <div class="producto">
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Bebidas/refresco/country_club_frambuesa.avif" alt="Nevera LG">
                    <h3>Country Club Frambuesa</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
-                 <div class="producto">
+                 <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Bebidas/refresco/country_club_uva.avif" alt="Nevera LG">
                    <h3>Country Club Uva</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
                   
 
 
@@ -615,77 +601,67 @@
 
 
         <!-- Enlatados-->
-          <section class="productos-destacados">
+          <section class="productos-destacados destino" id="enlatados">
              <h2>Enlatados</h2>
 
              <div class="productos-container">
 
                <!-- Producto 1 -->
-                 <div class="producto">
+                 <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Enlatados/atun_dimar.avif" alt="televisor Samsung 75 pulgadas">
                    <h3>Atún Dimar</h3>
                    <p>Precio: $65,000</p>
-                 </div>
-
+                 </article>
                <!-- Producto 2 -->
 
-               <div class="producto">
+               <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Enlatados/gandules_verdes_goya.avif" alt="Nevera LG">
                    <h3>Gandules Verdes Goya</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
                  
 
                <!-- Producto 3 -->
                 
-                <div class="producto">
+                <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Enlatados/habichuelas_negras_goya.avif" alt="Lavadora y Secadora Tecnomaster">
                    <h3>Habichuelas negras goya</h3>
                    <p>Precio: $33,000</p>
-                 </div>
+                </article>
 
 
                <!-- Producto 4 -->
 
-                <div class="producto">
+                <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Enlatados/maiz_la_famosa.avif" alt="Ventilador Daiwa">
                    <h3>Maíz La Famosa</h3>
                    <p>Precio: $3,000</p>
-                 </div>
+                </article>
                 
 
 
-                  <div class="producto">
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Enlatados/sardinas_gord.avif" alt="Nevera LG">
                    <h3>Sardinas Gord</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
-                  <div class="producto">
+
+                  <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Enlatados/salchichas_jaja.avif" alt="Nevera LG">
                    <h3>Salchichas Jaja</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
 
-                 <div class="producto">
+                 <article class="producto">
                    <img src="../imagenes/productos/Alimentos/Enlatados/tomates_pelados.avif" alt="Nevera LG">
                    <h3>Tomates Pelados la famosa</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                 </article>
                   
-
-
             </div>
       </section>
 
-
-
-
-
-         
-
-
-        
 
     </main>
 

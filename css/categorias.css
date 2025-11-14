@@ -21,7 +21,7 @@ body {
     background-image: url('../imagenes/fondos/fondo_m.jpg');
 }
 
-#fondo_Alimentos {
+#fondo_alimentos {
     background-image: url('../imagenes/fondos/fondo.avif');
 }
 
@@ -454,5 +454,7 @@ footer {
 
 
 
-
-
+/* margin-top para centrar la sección del vínculo cuando la visitemos */
+.destino {
+    scroll-margin-top: 155px; 
+}

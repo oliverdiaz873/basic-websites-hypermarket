@@ -41,22 +41,15 @@
 
 
 
-
-
-
-
-
-
 <body>
 
      <header>
 
        <a href="index.html" class="logo-header" aria-label="Ir a la página principal de Hipermercado Superior"> <!-- logo clickeable--> 
-        <img src="imagenes/logo/logo.jpeg" alt="logo Hipermercado Superior">
+        <img src="imagenes/logo/logo.jpeg" alt="logo de Hipermercado Superior">
         <h1>Hipermercado Superior</h1>
        </a>
 
-       
        <nav class="menu"> <!--barra de navegacion-->
          <ul>
                <!-- Nivel 1 -->
@@ -69,10 +62,10 @@
                              <li><a href="categorias/Alimentos.html">Alimentos</a>
                        <ul>
                             <!-- Nivel 3: Frutas y Verduras -->
-                              <li><a href="#">Frutas y Verduras</a></li>
+                              <li><a href="categorias/Alimentos.html#frutas_y_verduras">Frutas y Verduras</a></li>
                                  
                             <!-- Nivel 3: Despensa -->
-                               <li><a href="#">Despensa</a>
+                               <li><a href="categorias/Alimentos.html#despensa">Despensa</a>
                                   <ul>
                                     <li><a href="#">aceites</a></li>
                                     <li><a href="#">Tomate</a></li>
@@ -80,7 +73,7 @@
                                   </ul>
                                </li>
                         <!-- Nivel 3: Carnes, Pescados y Mariscos -->
-                        <li><a href="#">Carnes, Pescados y Mariscos</a>
+                        <li><a href="categorias/Alimentos.html#carnes_pescados_mariscos">Carnes, Pescados y Mariscos</a>
                             <ul>
                                 <li><a href="#">Res</a></li>
                                 <li><a href="#">Pollo</a></li>
@@ -88,7 +81,7 @@
                             </ul>
                         </li>
                         <!-- Nivel 3: Lácteos -->
-                        <li><a href="#">Lácteos</a>
+                        <li><a href="categorias/Alimentos.html#lacteos_y_huevos">Lácteos y Huevos</a>
                             <ul>
                                 <li><a href="#">Leche</a></li>
                                 <li><a href="#">Quesos</a></li>
@@ -96,7 +89,7 @@
                             </ul>
                         </li>
                         <!-- Nivel 3: Bebidas -->
-                        <li><a href="#">Bebidas</a>
+                        <li><a href="categorias/Alimentos.html#bebidas">Bebidas</a>
                             <ul>
                                 <li><a href="#">Jugos</a></li>
                                 <li><a href="#">Refrescos</a></li>
@@ -104,7 +97,7 @@
                             </ul>
                         </li>
                         <!-- Nivel 3: Enlatados -->
-                        <li><a href="#">Enlatados</a>
+                        <li><a href="categorias/Alimentos.html#enlatados">Enlatados</a>
                             <ul>
                                 <li><a href="#">Sopas</a></li>
                                 <li><a href="#">Verduras</a></li>
@@ -252,7 +245,7 @@
             </ul>
         </li>
         <!-- Nivel 1 -->
-        <li><a href="#">Ofertas</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
         <li><a href="#">Contacto</a></li>
     </ul>
 </nav>
@@ -261,8 +254,6 @@
 </header>
 
 
-
-       
      <main> <!--main-->
 
           <!-- Sección: Productos Destacados -->
@@ -272,52 +263,52 @@
              <div class="productos-container">
 
                <!-- Producto 1 -->
-                 <div class="producto">
+                 <article class="producto">
                    <img src="imagenes/productos/Tecnologia/Televisores/TV_led_samsung.avif" alt="televisor Samsung 75 pulgadas">
                    <h3>Televisor samsung 75 pulgadas</h3>
                    <p>Precio: $65,000</p>
-                 </div>
+                 </article>
 
                <!-- Producto 2 -->
 
-               <div class="producto">
+               <article class="producto">
                    <img src="imagenes/productos/Electrodomesticos/cocina/Neveras/Nevera_LG.avif" alt="Nevera LG">
                    <h3>Nevera LG</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+               </article>
                  
 
                <!-- Producto 3 -->
 
-                <div class="producto">
+                <article class="producto">
                    <img src="imagenes/productos/Electrodomesticos/climatizacion/ventiladores/ventilador_Daiwa.avif" alt="Ventilador Daiwa">
                    <h3>Ventilador Daiwa</h3>
                    <p>Precio: $3,000</p>
-                 </div>
+                </article>
                 
                  <!-- Producto 4 -->
 
-                  <div class="producto">
-                   <img src="imagenes/productos/Muebles y decoracion/sofa/sofa cama blanco.avif" alt="Nevera LG">
+                  <article class="producto">
+                   <img src="imagenes/productos/Muebles_y_decoracion/sofa/sofa_cama_blanco.avif" alt="Nevera LG">
                    <h3>Sofa cama blanco</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                  </article>
 
                     <!-- Producto 5 -->
 
-                  <div class="producto">
+                  <article class="producto">
                    <img src="imagenes/productos/Alimentos/carnes_pescados_mariscos/res/carne_de_res.avif" alt="Nevera LG">
                    <h3>carne de res para hamburguesa</h3>
                    <p>Precio: $80,000</p>
-                 </div>
+                  </article>
 
                      <!-- Producto 6 -->
 
-                  <div class="producto">
+                  <article class="producto">
                    <img src="imagenes/productos/Alimentos/carnes_pescados_mariscos/pollo/pollo.avif" alt="pollo">
                    <h3>Pollo entero don pollo</h3>
                    <p>1LB $79</p>
-                 </div>
+                  </article>
 
                   
             </div>
@@ -326,52 +317,57 @@
 
 
 
-         <!-- Sección: Ofertas -->
-<section class="productos-destacados">
-    <h2>Ofertas de la Semana</h2>
-    <div class="productos-container">
+        <!-- Sección: Ofertas -->
+        <section class="productos-destacados destino" id="ofertas">
+             <h2>Ofertas de la Semana</h2>
+           <div class="productos-container">
 
-        <div class="producto">
-            <img src="imagenes/productos/Alimentos/frutas y verduras/manzana verde.avif" alt="Descuento en manzanas verdes">
-            <h3>Manzanas Verdes -20%</h3>
-            <p>
-                Antes: <span class="precio-antiguo">RD$ 120.00</span>
-                <span class="flecha">→</span>
-                <span class="precio-nuevo">Ahora: RD$ 96.00</span>
-            </p>
-        </div>
+               <!-- producto 1 -->
+               <article class="producto">
+                  <img src="imagenes/productos/Alimentos/frutas_y_verduras/manzana_verde.avif" alt="Descuento en manzanas verdes">
+                  <h3>Manzanas Verdes -20%</h3>
+                  <p>
+                    Antes: <span class="precio-antiguo">RD$ 120.00</span>
+                    <span class="flecha">→</span>
+                    <span class="precio-nuevo">Ahora: RD$ 96.00</span>
+                  </p>
+                </article>
 
-        <div class="producto">
-            <img src="imagenes/productos/Alimentos/lacteos_y_huevos/huevos/huevos_30unidades.avif" alt="huevos en oferta">
-            <h3>Huevos -10%</h3>
-            <p>
-                Antes: <span class="precio-antiguo">RD$ 260.00</span>
-                <span class="flecha">→</span>
-                <span class="precio-nuevo">Ahora: RD$ 234.00</span>
-            </p>
-        </div>
+              <!-- producto 2 -->
+             <article class="producto">
+                <img src="imagenes/productos/Alimentos/lacteos_y_huevos/huevos/huevos_30unidades.avif" alt="huevos en oferta">
+                <h3>Huevos -10%</h3>
+                <p>
+                  Antes: <span class="precio-antiguo">RD$ 260.00</span>
+                  <span class="flecha">→</span>
+                  <span class="precio-nuevo">Ahora: RD$ 234.00</span>
+                </p>
+            </article>
 
-        <div class="producto">
-            <img src="imagenes/productos/Electrodomesticos/cocina/freezer/freezer_7pies.avif" alt="freezer en oferta">
-            <h3>Freezer 7 pies -15%</h3>
-            <p>
+            <!-- producto 3-->
+            <article class="producto">
+              <img src="imagenes/productos/Electrodomesticos/cocina/freezer/freezer_7pies.avif" alt="freezer en oferta">
+              <h3>Freezer 7 pies -15%</h3>
+              <p>
                 Antes: <span class="precio-antiguo">RD$ 29,000.00</span>
                 <span class="flecha">→</span>
                 <span class="precio-nuevo">Ahora: RD$ 24,650.00</span>
-            </p>
-        </div>
+              </p>
+            </article>
 
-        <div class="producto">
-            <img src="imagenes/productos/Tecnologia/Celulares/celular_samsung_A26.avif" alt="oferta en celulares samsung">
-            <h3>Celular Samsung A26 -10%</h3>
-            <p>
+          <!-- producto 4 -->
+          <article class="producto">
+              <img src="imagenes/productos/Tecnologia/Celulares/celular_samsung_A26.avif" alt="oferta en celulares samsung">
+              <h3>Celular Samsung A26 -10%</h3>
+              <p>
                 Antes: <span class="precio-antiguo">RD$ 12,000.00</span>
                 <span class="flecha">→</span>
                 <span class="precio-nuevo">Ahora: RD$ 10,800.00</span>
-            </p>
-        </div>
+             </p>
+            </article>
 
-        <div class="producto">
+         <!-- producto 5 -->
+         <article class="producto">
             <img src="imagenes/productos/Electrodomesticos/cocina/Cilindros_de_gas/cilindro_de_gas_duragas.avif" alt="descuento en cilindros de gas">
             <h3>Cilindros de Gas -15%</h3>
             <p>
@@ -379,7 +375,7 @@
                 <span class="flecha">→</span>
                 <span class="precio-nuevo">Ahora: RD$ 1,275.00</span>
             </p>
-        </div>
+        </article>
 
     </div>
 </section>
@@ -431,8 +427,6 @@
 
     </footer>
 
+
 </body>
-
-
-
 </html>
