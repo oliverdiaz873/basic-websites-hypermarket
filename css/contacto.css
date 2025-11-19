@@ -1,0 +1,409 @@
+
+/* Reset básico */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-image: url('../imagenes/fondos/fondo.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: rgba(0,0,0,0.8);
+    padding: 5px 30px;
+    border-radius: 20px;
+    width: fit-content;  /* La propiedad width: fit-content; ajusta automáticamente el ancho del elemento al tamaño mínimo necesario para que quepa su contenido */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    white-space: nowrap;  /* white-space: nowrap; impide que el texto o los elementos hijos pasen a una nueva línea es decir, todo el contenido se mantiene en una sola línea */
+    position: fixed;           /* fijo en la ventana */
+    top: 20px;                 /* margen superior */
+    left: 50%;                 /* posición horizontal desde el centro */
+    transform: translateX(-50%); /* centra el header horizontalmente de forma perfecta */
+    width: fit-content;        /* ancho según contenido */
+    z-index: 1000;    /* el header Siempre estará visible por encima de otros elementos de la página en el eje z */
+}
+
+header  img {
+    width: 45px;
+    height: auto;
+}
+
+header  h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: 'Domine-Bold', serif;
+    
+}
+
+header a.logo-header { /* logo clickeable */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none; /* quitar subrayado */
+    color: white; /* para que el h1 mantenga el color */
+}
+header a.logo-header h1 {
+    margin: 0;
+}
+
+/* Main */
+
+main {
+    text-align: center;
+    margin-top: 100px; /* separacion ideal del main y el header fijo*/
+}
+
+
+/* nav */
+
+nav.menu > ul {   /* Selecciona solo los elementos <ul> que son hijos directos de un elemento <nav> con clase menu. */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Nivel 1 links */
+nav.menu > ul > li {
+    position: relative;
+}
+nav.menu > ul > li > a {
+    display: block;
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+nav.menu > ul > li:hover > a {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Nivel 2 */
+nav.menu > ul > li > ul {
+    display: none; /* oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 1000;
+}
+nav.menu > ul > li:hover > ul {
+    display: flex; /* mostrar al hacer hover sobre nivel 1 */
+}
+
+/* Nivel 3 y subniveles */
+nav.menu ul li ul li {
+    position: relative;
+}
+nav.menu ul li ul li > ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    min-width: 160px;
+}
+nav.menu ul li ul li:hover > ul {
+    display: flex;
+}
+
+
+/* Nivel 1: flecha hacia abajo solo si tiene submenú directo */
+nav.menu > ul > li:has(> ul) > a::after {
+    content: " ▼";
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Nivel 2: flecha hacia la derecha solo si tiene submenú directo */
+nav.menu > ul > li > ul > li:has(> ul) > a::after {
+    content: " ▶";
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/* Nivel 3: subnivel de submenú, flecha hacia la derecha */
+nav.menu > ul > li > ul > li > ul > li:has(> ul) > a::after {
+    content: " ▶";
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+
+/* Links en submenús */
+nav.menu ul li ul li a {
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+/* Estilo general de links y hover */
+nav.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+nav.menu a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+
+
+
+
+
+
+
+/* Aseguramos que las secciones ocupen todo el ancho */
+section {
+    width: 100%;
+    box-sizing: border-box; /* para que el padding no expanda más allá del 100% */
+}
+
+/* Si quieres mantener el contenido centrado dentro de la sección */
+section > * {
+    margin: 0 auto;  
+}
+
+
+/* footer */
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* margin-top para centrar la sección del vínculo cuando la visitemos */
+.destino {
+    scroll-margin-top: 130px; 
+}
+
+
+
+
+
+/* SECCIÓN GENERAL DE CONTACTO */
+section#contacto {
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== MAIN ===== */
+main.contacto-container {
+    max-width: 600px; /* reducir ancho */
+    width: 90%;       /* adaptable a pantallas pequeñas */
+    margin: 130px auto 2rem auto; /* aumentar margen superior */
+    
+    padding: 30px 40px;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.8);
+    border: solid 2px rgb(199, 199, 199,0.2);
+    
+    color: #fff;
+
+
+}
+
+main.contacto-container .contacto-form h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.contacto-container .input-box {
+
+    width: 100%;
+    height: 70px;
+    margin: 30px 0;
+
+    
+}
+
+.input-box {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; /* apila label sobre input */
+    align-items: flex-start; /* alinea a la izquierda */
+    gap: 5px; /* espacio entre label e input */
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255,0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 15px 20px;  /* mismo padding horizontal */
+    box-sizing: border-box;
+    
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+
+
+
+/* Estilo textarea igual que inputs */
+.contacto-form textarea {
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+     font-family: Arial, sans-serif;
+    outline: none;
+    box-sizing: border-box;
+     resize: none;  /* desactiva el cambio de tamaño */
+    overflow: auto;         /* permite scroll interno */
+    scrollbar-width: none;  
+
+     padding: 40px 20px;  /* mismo padding horizontal */
+    box-sizing: border-box;
+}
+
+.contacto-form textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.contacto-form textarea::placeholder {
+    color: #fff;
+}
+
+.contacto-form textarea:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+.contacto-form input:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+
+
+.input-box label {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.contacto-form button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    outline: none;
+    padding: 1rem;
+    margin-top: 30px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contacto-form button:hover {
+    background-color: #ffcc00;
+     
+}
+
