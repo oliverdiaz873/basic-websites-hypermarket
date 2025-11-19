@@ -1,0 +1,268 @@
+
+
+
+/* Reset básico */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-image: url('../imagenes/fondos/fondo.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: rgba(0,0,0,0.8);
+    padding: 5px 30px;
+    border-radius: 20px;
+    width: fit-content;  /* La propiedad width: fit-content; ajusta automáticamente el ancho del elemento al tamaño mínimo necesario para que quepa su contenido */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    white-space: nowrap;  /* white-space: nowrap; impide que el texto o los elementos hijos pasen a una nueva línea es decir, todo el contenido se mantiene en una sola línea */
+    position: fixed;           /* fijo en la ventana */
+    top: 20px;                 /* margen superior */
+    left: 50%;                 /* posición horizontal desde el centro */
+    transform: translateX(-50%); /* centra el header horizontalmente de forma perfecta */
+    width: fit-content;        /* ancho según contenido */
+    z-index: 1000;    /* el header Siempre estará visible por encima de otros elementos de la página en el eje z */
+}
+
+header  img {
+    width: 45px;
+    height: auto;
+}
+
+header  h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: 'Domine-Bold', serif;
+    
+}
+
+header a.logo-header { /* logo clickeable */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none; /* quitar subrayado */
+    color: white; /* para que el h1 mantenga el color */
+}
+header a.logo-header h1 {
+    margin: 0;
+}
+
+/* nav */
+
+nav.menu > ul {   /* Selecciona solo los elementos <ul> que son hijos directos de un elemento <nav> con clase menu. */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Nivel 1 links */
+nav.menu > ul > li {
+    position: relative;
+}
+nav.menu > ul > li > a {
+    display: block;
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+nav.menu > ul > li:hover > a {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Nivel 2 */
+nav.menu > ul > li > ul {
+    display: none; /* oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 1000;
+}
+nav.menu > ul > li:hover > ul {
+    display: flex; /* mostrar al hacer hover sobre nivel 1 */
+}
+
+/* Nivel 3 y subniveles */
+nav.menu ul li ul li {
+    position: relative;
+}
+nav.menu ul li ul li > ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    min-width: 160px;
+}
+nav.menu ul li ul li:hover > ul {
+    display: flex;
+}
+
+
+/* Nivel 1: flecha hacia abajo solo si tiene submenú directo */
+nav.menu > ul > li:has(> ul) > a::after {
+    content: " ▼";
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Nivel 2: flecha hacia la derecha solo si tiene submenú directo */
+nav.menu > ul > li > ul > li:has(> ul) > a::after {
+    content: " ▶";
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/* Nivel 3: subnivel de submenú, flecha hacia la derecha */
+nav.menu > ul > li > ul > li > ul > li:has(> ul) > a::after {
+    content: " ▶";
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+
+/* Links en submenús */
+nav.menu ul li ul li a {
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+/* Estilo general de links y hover */
+nav.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+nav.menu a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+
+/* footer */
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.politica-container {
+    max-width: 900px;
+    margin: 120px auto 40px auto; /* Evita que se tape con el header */
+    background-color: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    
+
+}
+
+.politica-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.politica-container h2 {
+    margin-top: 25px;
+    color: #ffcc00;
+    text-align: center;
+}
+
+.politica-container ul {
+    margin: 10px 0 20px 20px;
+    line-height: 1.7;
+}
+
+
+.politica-container p:first-of-type {
+     font-weight: 600;
+     font-size: 18px;
+}
+
+.politica-container p {
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.5;         /* ayuda con la legibilidad en móviles */
+}
