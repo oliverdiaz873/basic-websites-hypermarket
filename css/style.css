@@ -32,7 +32,6 @@ header {
     top: 20px;                 /* margen superior */
     left: 50%;                 /* posición horizontal desde el centro */
     transform: translateX(-50%); /* centra el header horizontalmente de forma perfecta */
-    width: fit-content;        /* ancho según contenido */
     z-index: 1000;    /* el header Siempre estará visible por encima de otros elementos de la página en el eje z */
 }
 
@@ -61,7 +60,6 @@ header a.logo-header h1 {
 }
 
 /* Main */
-
 main {
     text-align: center;
     margin-top: 120px; /* separacion ideal del main y el header fijo*/
@@ -86,7 +84,6 @@ main {
 
 
 /* nav */
-
 nav.menu > ul {   /* Selecciona solo los elementos <ul> que son hijos directos de un elemento <nav> con clase menu. */
     list-style: none;
     padding: 0;
@@ -161,14 +158,6 @@ nav.menu > ul > li > ul > li:has(> ul) > a::after {
     margin-left: 5px;
 }
 
-/* Nivel 3: subnivel de submenú, flecha hacia la derecha */
-nav.menu > ul > li > ul > li > ul > li:has(> ul) > a::after {
-    content: " ▶";
-    font-size: 10px;
-    margin-left: 5px;
-}
-
-
 /* Links en submenús */
 nav.menu ul li ul li a {
     padding: 8px 12px;
@@ -189,10 +178,6 @@ nav.menu a {
 nav.menu a:hover {
     background-color: rgba(255,255,255,0.2);
 }
-
-
-
-
 
 
 /* ========================== SECCIONES ========================== */
@@ -339,7 +324,7 @@ nav.menu a:hover {
 
 .precio-nuevo {
     font-weight: bold;
-    color: #28a745; /* verde para indicar oferta */
+    color:#272727;
     font-size: 1rem;
 }
 
@@ -405,33 +390,10 @@ footer {
     text-decoration: underline;
 }
 
-
-
-
-
-
 /* margin-top para centrar la sección del vínculo cuando la visitemos */
 .destino {
     scroll-margin-top: 130px; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

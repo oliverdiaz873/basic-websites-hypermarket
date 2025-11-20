@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- META ETIQUETAS -->
@@ -51,141 +51,71 @@
        </a>
 
        
-       <nav class="menu"> <!--barra de navegacion-->
-         <ul>
-               <!-- Nivel 1 -->
-                   <li><a href="../index.html">Inicio</a></li>
+    <nav class="menu" role="navigation" aria-label="Menú principal">
+      <ul>
 
-               <!-- Nivel 1: Categorías -->
-                   <li><a href="#">Categorías</a>
-                       <ul>
-                          <!-- Nivel 2: Alimentos -->
-                             <li><a href="Alimentos.html">Alimentos</a>
-                       <ul>
-                            <!-- Nivel 3: Frutas y Verduras -->
-                              <li><a href="Alimentos.html#frutas_y_verduras">Frutas y Verduras</a></li>
-                                 
-                            <!-- Nivel 3: Despensa -->
-                               <li><a href="Alimentos.html#despensa">Despensa</a>
-                                  <ul>
-                                    <li><a href="#">aceites</a></li>
-                                    <li><a href="#">Tomate</a></li>
-                                    <li><a href="#">Zanahoria</a></li>
-                                  </ul>
-                               </li>
-                        <!-- Nivel 3: Carnes, Pescados y Mariscos -->
-                        <li><a href="Alimentos.html#carnes_pescados_mariscos">Carnes, Pescados y Mariscos</a>
-                            <ul>
-                                <li><a href="#">Res</a></li>
-                                <li><a href="#">Pollo</a></li>
-                                <li><a href="#">Cerdo</a></li>
-                            </ul>
-                        </li>
-                        <!-- Nivel 3: Lácteos -->
-                        <li><a href="Alimentos.html#lacteos_y_huevos">Lácteos y Huevos</a>
-                            <ul>
-                                <li><a href="#">Leche</a></li>
-                                <li><a href="#">Quesos</a></li>
-                                <li><a href="#">Yogur</a></li>
-                            </ul>
-                        </li>
-                        <!-- Nivel 3: Bebidas -->
-                        <li><a href="Alimentos.html#bebidas">Bebidas</a>
-                            <ul>
-                                <li><a href="#">Jugos</a></li>
-                                <li><a href="#">Refrescos</a></li>
-                                <li><a href="#">Agua</a></li>
-                            </ul>
-                        </li>
-                        <!-- Nivel 3: Enlatados -->
-                        <li><a href="Alimentos.html#enlatados">Enlatados</a>
-                            <ul>
-                                <li><a href="#">Sopas</a></li>
-                                <li><a href="#">Verduras</a></li>
-                                <li><a href="#">Frutas</a></li>
-                            </ul>
-                        </li>
+        <!-- Nivel 1 -->
+        <li><a href="../index.html">Inicio</a></li>
+
+        <!-- Nivel 1: Categorías -->
+        <!-- href="#" indica que es un enlace vacío, # significa no ir a ninguna página en particular -->
+        <!-- Nivel 1: aria-haspopup="true" Sirve para lectores de pantalla (personas no videntes) para que sepan que ese enlace tiene un submenú desplegable. -->
+        <!-- aria-expanded="false" significa “Este menú actualmente está cerrado”. -->
+        <li><a href="#" aria-haspopup="true" aria-expanded="false">Categorías</a>
+
+            <ul>
+
+                <!-- Nivel 2: Alimentos -->
+                <li>
+                    <a href="Alimentos.html">Alimentos</a>
+                    <ul> <!-- Nivel 3: -->
+                        <li><a href="Alimentos.html#frutas_y_verduras">Frutas y Verduras</a></li>
+                        <li><a href="Alimentos.html#despensa">Despensa</a></li>
+                        <li><a href="Alimentos.html#carnes_pescados_mariscos">Carnes, Pescados y Mariscos</a></li>
+                        <li><a href="Alimentos.html#lacteos_y_huevos">Lácteos y Huevos</a></li>
+                        <li><a href="Alimentos.html#bebidas">Bebidas</a></li>
+                        <li><a href="Alimentos.html#enlatados">Enlatados</a></li>
                     </ul>
                 </li>
 
                 <!-- Nivel 2: Electrodomésticos -->
-                <li><a href="Electrodomesticos.html">Electrodomésticos</a>
-                    <ul>
-                        <!-- Nivel 3: Cocina -->
-                        <li><a href="Electrodomesticos.html#cocina">Cocina</a>
-                            <ul>
-                                <li><a href="#">Microondas</a></li>
-                                <li><a href="#">Estufas</a></li>
-                                <li><a href="#">Hornos</a></li>
-                            </ul>
-                        </li>
-                        <!-- Nivel 3: Lavado -->
-                        <li><a href="Electrodomesticos.html#lavado">Lavado</a>
-                            <ul>
-                                <li><a href="#">Lavadoras</a></li>
-                                <li><a href="#">Secadoras</a></li>
-                            </ul>
-                        </li>
-                       
-                        <!-- Nivel 3: Pequeños Electrodomésticos -->
-                        <li><a href="#">Pequeños Electrodomésticos</a>
-                            <ul>
-                                <li><a href="#">Aspiradoras</a></li>
-                                <li><a href="#">Batidoras</a></li>
-                                <li><a href="#">Cafeteras</a></li>
-                            </ul>
-                        </li>
-                        <!-- Nivel 3: Climatización -->
-                        <li><a href="Electrodomesticos.html#climatizacion">Climatización</a>
-                            <ul>
-                                <li><a href="#">Ventiladores</a></li>
-                                <li><a href="#">Aires Acondicionados</a></li>
-                            </ul>
-                        </li>
+                <li>
+                    <a href="Electrodomesticos.html">Electrodomésticos</a>
+                    <ul> <!-- Nivel 3: -->
+                        <li><a href="Electrodomesticos.html#cocina">Cocina</a></li>
+                        <li><a href="Electrodomesticos.html#lavado">Lavado</a></li>
+                        <li><a href="Electrodomesticos.html#climatizacion">Climatización</a></li>
                     </ul>
                 </li>
 
                 <!-- Nivel 2: Tecnología -->
-                <li><a href="tecnologia.html">Tecnología</a>
-                    <ul>
-                        <!-- Nivel 3: Televisores -->
-                        <li><a href="tecnologia.html#televisores">Televisores</a></li>
-                        <!-- Nivel 3: Laptops -->
-                        <li><a href="tecnologia.html#laptops">Laptops</a></li>
-                        <!-- Nivel 3: Tablets -->
-                        <li><a href="tecnologia.html#tablets">Tablets</a></li>
-                        <!-- Nivel 3: Celulares -->
-                        <li><a href="tecnologia.html#celulares">Celulares</a></li>
-                        <!-- Nivel 3: Bocinas -->
-                        <li><a href="tecnologia.html#bocinas">Bocinas</a></li>
-                            
+                <li>
+                    <a href="Tecnologia.html">Tecnología</a>
+                    <ul> <!-- Nivel 3: -->
+                        <li><a href="Tecnologia.html#televisores">Televisores</a></li>
+                        <li><a href="Tecnologia.html#laptops">Laptops</a></li>
+                        <li><a href="Tecnologia.html#tablets">Tablets</a></li>
+                        <li><a href="Tecnologia.html#celulares">Celulares</a></li>
+                        <li><a href="Tecnologia.html#bocinas">Bocinas</a></li>
                     </ul>
                 </li>
 
-               <!-- Nivel 2: Ropa -->
-                <li><a href="Ropa.html">Ropa</a>
-                    <ul>
-                        <!-- Nivel 3: Pantalones para hombres -->
+                <!-- Nivel 2: Ropa -->
+                <li>
+                    <a href="Ropa.html">Ropa</a>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="Ropa.html#pantalones_para_hombres">Pantalones para Hombres</a></li>
-                            
-                        <!-- Nivel 3: Pantalones para Mujeres -->
                         <li><a href="Ropa.html#pantalones_para_mujeres">Pantalones para Mujeres</a></li>
-                            
-                        <!-- Nivel 3: Pantalones para Niños -->
                         <li><a href="Ropa.html#pantalones_para_niños">Pantalones para Niños</a></li>
-
-                        <!-- Nivel 3: Trajes para Hombres -->
-                        <li><a href="Ropa.html#trajes_para_hombre">Trajes para Hombres</a></li>
-
-                        <!-- Nivel 3: Vestidos -->
+                        <li><a href="Ropa.html#trajes_para_hombres">Trajes para Hombres</a></li>
                         <li><a href="Ropa.html#vestidos">Vestidos</a></li>
-
                     </ul>
                 </li>
 
                 <!-- Nivel 2: Muebles y Decoración -->
-                <li><a href="muebles_y_decoracion.html">Muebles y Decoración</a>
-                    <ul>
+                <li>
+                    <a href="muebles_y_decoracion.html">Muebles y Decoración</a>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="muebles_y_decoracion.html#sofas">Sofás</a></li>
                         <li><a href="muebles_y_decoracion.html#sillones">Sillones</a></li>
                         <li><a href="muebles_y_decoracion.html#mesas">Mesas</a></li>
@@ -194,8 +124,9 @@
                 </li>
 
                 <!-- Nivel 2: Farmacia -->
-                <li><a href="Farmacia.html">Farmacia</a>
-                    <ul>
+                <li>
+                    <a href="Farmacia.html">Farmacia</a>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="Farmacia.html#analgesicos">Analgésicos</a></li>
                         <li><a href="Farmacia.html#dermocosmetica">Dermocosmética</a></li>
                         <li><a href="Farmacia.html#vitaminas_y_minerales">Vitaminas y Minerales</a></li>
@@ -204,8 +135,9 @@
                 </li>
 
                 <!-- Nivel 2: Ferretería -->
-                <li><a href="Ferreteria.html">Ferretería</a>
-                    <ul>
+                <li>
+                    <a href="Ferreteria.html">Ferretería</a>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="Ferreteria.html#herramientas_manuales">Herramientas Manuales</a></li>
                         <li><a href="Ferreteria.html#pinturas_y_acabados">Pinturas y Acabados</a></li>
                         <li><a href="Ferreteria.html#electricidad">Electricidad</a></li>
@@ -214,21 +146,24 @@
                 </li>
 
                 <!-- Nivel 2: Juguetes -->
-                <li><a href="Juguetes.html">Juguetes</a>
-                    <ul>
-                        <li><a href="#juguetes_para_niños">Niños</a></li>
-                        <li><a href="#juguetes_para_niñas">Niñas</a></li>
+                <li>
+                    <a href="juguetes.html">Juguetes</a>
+                    <ul> <!-- Nivel 3: -->
+                        <li><a href="juguetes.html#juguetes_para_niños">Juguetes para Niños</a></li>
+                        <li><a href="juguetes.html#juguetes_para_niñas">Juguetes para Niñas</a></li>
                     </ul>
                 </li>
 
             </ul>
         </li>
+
         <!-- Nivel 1 -->
         <li><a href="../index.html#ofertas">Ofertas</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="../contacto.html">Contacto</a></li>
+
     </ul>
 </nav>
-
+      
 
 </header>
 
@@ -373,8 +308,8 @@
 
                  <!-- Enlaces legales -->
                 <div class="footer-links">
-                  <a href="legal/privacy.html" title="Política de Privacidad">Política de Privacidad</a> |
-                  <a href="legal/terms.html" title="Términos de Uso">Términos de Uso</a>
+                  <a href="../legal/privacy.html" title="Política de Privacidad">Política de Privacidad</a> |
+                  <a href="../legal/terms.html" title="Términos de Uso">Términos de Uso</a>
                 </div>
             </div>
 

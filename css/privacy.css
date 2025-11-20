@@ -238,10 +238,11 @@ footer {
 
 }
 
-.politica-container h1 {
+.politica-container > h1:first-child {
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
+    color: #ffcc00;
 }
 
 .politica-container h2 {

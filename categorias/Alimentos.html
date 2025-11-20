@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -48,147 +48,72 @@
         <h1>Hipermercado Superior</h1>
        </a>
 
-       <nav class="menu"> <!--barra de navegacion-->
-         <ul>
-               <!-- Nivel 1 -->
-                   <li><a href="../index.html">Inicio</a></li>
+     
+    <nav class="menu" role="navigation" aria-label="Menú principal">
+      <ul>
 
-               <!-- Nivel 1: Categorías -->
-                   <li><a href="#">Categorías</a>
-                       <ul>
-                          <!-- Nivel 2: Alimentos -->
-                             <li><a href="#">Alimentos</a>
-                       <ul>
-                            <!-- Nivel 3: Frutas y Verduras -->
-                              <li><a href="#frutas_y_verduras">Frutas y Verduras</a></li>
-                                 
-                            <!-- Nivel 3: Despensa -->
-                               <li><a href="#despensa">Despensa</a>
-                                  <ul>
-                                    <li><a href="#">aceites</a></li>
-                                    <li><a href="#">Tomate</a></li>
-                                    <li><a href="#">Zanahoria</a></li>
-                                  </ul>
-                               </li>
-                        <!-- Nivel 3: Carnes, Pescados y Mariscos -->
-                        <li><a href="#carnes_pescados_mariscos">Carnes, Pescados y Mariscos</a>
-                            <ul>
-                                <li><a href="#">Res</a></li>
-                                <li><a href="#">Pollo</a></li>
-                                <li><a href="#">Cerdo</a></li>
-                            </ul>
-                        </li>
-                        <!-- Nivel 3: Lácteos -->
-                        <li><a href="#lacteos_y_huevos">Lácteos y Huevos</a>
-                            <ul>
-                                <li><a href="#">Leche</a></li>
-                                <li><a href="#">Quesos</a></li>
-                                <li><a href="#">Yogur</a></li>
-                            </ul>
-                        </li>
-                        <!-- Nivel 3: Bebidas -->
-                        <li><a href="#bebidas">Bebidas</a>
-                            <ul>
-                                <li><a href="#">Jugos</a></li>
-                                <li><a href="#">Refrescos</a></li>
-                                <li><a href="#">Agua</a></li>
-                            </ul>
-                        </li>
-                        <!-- Nivel 3: Enlatados -->
-                        <li><a href="#enlatados">Enlatados</a>
-                            <ul>
-                                <li><a href="#">Sopas</a></li>
-                                <li><a href="#">Verduras</a></li>
-                                <li><a href="#">Frutas</a></li>
-                            </ul>
-                        </li>
+        <!-- Nivel 1 -->
+        <li><a href="../index.html">Inicio</a></li>
+
+        <!-- Nivel 1: Categorías -->
+        <!-- href="#" indica que es un enlace vacío, # significa no ir a ninguna página en particular -->
+        <!-- Nivel 1: aria-haspopup="true" Sirve para lectores de pantalla (personas no videntes) para que sepan que ese enlace tiene un submenú desplegable. -->
+        <!-- aria-expanded="false" significa “Este menú actualmente está cerrado”. -->
+        <li><a href="#" aria-haspopup="true" aria-expanded="false">Categorías</a>
+
+            <ul>
+
+                <!-- Nivel 2: Alimentos -->
+                <li>
+                    <a href="Alimentos.html">Alimentos</a>
+                    <ul> <!-- Nivel 3: -->
+                        <li><a href="Alimentos.html#frutas_y_verduras">Frutas y Verduras</a></li>
+                        <li><a href="Alimentos.html#despensa">Despensa</a></li>
+                        <li><a href="Alimentos.html#carnes_pescados_mariscos">Carnes, Pescados y Mariscos</a></li>
+                        <li><a href="Alimentos.html#lacteos_y_huevos">Lácteos y Huevos</a></li>
+                        <li><a href="Alimentos.html#bebidas">Bebidas</a></li>
+                        <li><a href="Alimentos.html#enlatados">Enlatados</a></li>
                     </ul>
                 </li>
 
                 <!-- Nivel 2: Electrodomésticos -->
-                <li><a href="Electrodomesticos.html">Electrodomésticos</a>
-                    <ul>
-                        <!-- Nivel 3: Cocina -->
-                        <li><a href="Electrodomesticos.html#cocina">Cocina</a>
-                            <ul>
-                                <li><a href="#">Microondas</a></li>
-                                <li><a href="#">Estufas</a></li>
-                                <li><a href="#">Hornos</a></li>
-                            </ul>
-                        </li>
-                        <!-- Nivel 3: Lavado -->
-                        <li><a href="Electrodomesticos.html#lavado">Lavado</a>
-                            <ul>
-                                <li><a href="#">Lavadoras</a></li>
-                                <li><a href="#">Secadoras</a></li>
-                            </ul>
-                        </li>
-                        
-                        <!-- Nivel 3: Pequeños Electrodomésticos -->
-                        <li><a href="#">Pequeños Electrodomésticos</a>
-                            <ul>
-                                <li><a href="#">Aspiradoras</a></li>
-                                <li><a href="#">Batidoras</a></li>
-                                <li><a href="#">Cafeteras</a></li>
-                            </ul>
-                        </li>
-                        <!-- Nivel 3: Climatización -->
-                        <li><a href="Electrodomesticos.html#climatizacion">Climatización</a>
-                            <ul>
-                                <li><a href="#">Ventiladores</a></li>
-                                <li><a href="#">Aires Acondicionados</a></li>
-                            </ul>
-                        </li>
+                <li>
+                    <a href="Electrodomesticos.html">Electrodomésticos</a>
+                    <ul> <!-- Nivel 3: -->
+                        <li><a href="Electrodomesticos.html#cocina">Cocina</a></li>
+                        <li><a href="Electrodomesticos.html#lavado">Lavado</a></li>
+                        <li><a href="Electrodomesticos.html#climatizacion">Climatización</a></li>
                     </ul>
                 </li>
 
                 <!-- Nivel 2: Tecnología -->
-                <li><a href="tecnologia.html">Tecnología</a>
-                    <ul>
-                        <!-- Nivel 3: Televisores -->
-                        <li><a href="tecnologia.html#televisores">Televisores</a>
-                            <ul>
-                                <li><a href="#">PC Escritorio</a></li>
-                                <li><a href="#">All-in-One</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="tecnologia.html#laptops">Laptops</a></li>
-                        <li><a href="tecnologia.html#tablets">Tablets</a></li>
-                        <!-- Nivel 3: Celulares -->
-                        <li><a href="tecnologia.html#celulares">Celulares</a>
-                            
-                        </li>
-                        <!-- Nivel 3: Bocinas -->
-                        <li><a href="tecnologia.html#bocinas">Bocinas</a>
-                            
-                        </li>
+                <li>
+                    <a href="Tecnologia.html">Tecnología</a>
+                    <ul> <!-- Nivel 3: -->
+                        <li><a href="Tecnologia.html#televisores">Televisores</a></li>
+                        <li><a href="Tecnologia.html#laptops">Laptops</a></li>
+                        <li><a href="Tecnologia.html#tablets">Tablets</a></li>
+                        <li><a href="Tecnologia.html#celulares">Celulares</a></li>
+                        <li><a href="Tecnologia.html#bocinas">Bocinas</a></li>
                     </ul>
                 </li>
 
                 <!-- Nivel 2: Ropa -->
-                <li><a href="Ropa.html">Ropa</a>
-                    <ul>
-                        <!-- Nivel 3: Pantalones para hombres -->
+                <li>
+                    <a href="Ropa.html">Ropa</a>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="Ropa.html#pantalones_para_hombres">Pantalones para Hombres</a></li>
-                            
-                        <!-- Nivel 3: Pantalones para Mujeres -->
                         <li><a href="Ropa.html#pantalones_para_mujeres">Pantalones para Mujeres</a></li>
-                            
-                        <!-- Nivel 3: Pantalones para Niños -->
                         <li><a href="Ropa.html#pantalones_para_niños">Pantalones para Niños</a></li>
-
-                        <!-- Nivel 3: Trajes para Hombres -->
-                        <li><a href="Ropa.html#trajes_para_hombre">Trajes para Hombres</a></li>
-
-                        <!-- Nivel 3: Vestidos -->
+                        <li><a href="Ropa.html#trajes_para_hombres">Trajes para Hombres</a></li>
                         <li><a href="Ropa.html#vestidos">Vestidos</a></li>
-
                     </ul>
                 </li>
 
                 <!-- Nivel 2: Muebles y Decoración -->
-                <li><a href="muebles_y_decoracion.html">Muebles y Decoración</a>
-                    <ul>
+                <li>
+                    <a href="muebles_y_decoracion.html">Muebles y Decoración</a>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="muebles_y_decoracion.html#sofas">Sofás</a></li>
                         <li><a href="muebles_y_decoracion.html#sillones">Sillones</a></li>
                         <li><a href="muebles_y_decoracion.html#mesas">Mesas</a></li>
@@ -197,19 +122,20 @@
                 </li>
 
                 <!-- Nivel 2: Farmacia -->
-                <li><a href="Farmacia.html">Farmacia</a>
-                    <ul>
+                <li>
+                    <a href="Farmacia.html">Farmacia</a>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="Farmacia.html#analgesicos">Analgésicos</a></li>
                         <li><a href="Farmacia.html#dermocosmetica">Dermocosmética</a></li>
                         <li><a href="Farmacia.html#vitaminas_y_minerales">Vitaminas y Minerales</a></li>
                         <li><a href="Farmacia.html#antigripales_y_resfriado">Antigripales y Resfriado</a></li>
-
                     </ul>
                 </li>
 
                 <!-- Nivel 2: Ferretería -->
-                <li><a href="Ferreteria.html">Ferretería</a>
-                    <ul>
+                <li>
+                    <a href="Ferreteria.html">Ferretería</a>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="Ferreteria.html#herramientas_manuales">Herramientas Manuales</a></li>
                         <li><a href="Ferreteria.html#pinturas_y_acabados">Pinturas y Acabados</a></li>
                         <li><a href="Ferreteria.html#electricidad">Electricidad</a></li>
@@ -218,20 +144,24 @@
                 </li>
 
                 <!-- Nivel 2: Juguetes -->
-                <li><a href="juguetes.html">Juguetes</a>
-                    <ul>
-                        <li><a href="juguetes.html#juguetes_para_niños">Niños</a></li>
-                        <li><a href="juguetes.html#juguetes_para_niñas">Niñas</a></li>
+                <li>
+                    <a href="juguetes.html">Juguetes</a>
+                    <ul> <!-- Nivel 3: -->
+                        <li><a href="juguetes.html#juguetes_para_niños">Juguetes para Niños</a></li>
+                        <li><a href="juguetes.html#juguetes_para_niñas">Juguetes para Niñas</a></li>
                     </ul>
                 </li>
 
             </ul>
         </li>
+
         <!-- Nivel 1 -->
         <li><a href="../index.html#ofertas">Ofertas</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="../contacto.html">Contacto</a></li>
+
     </ul>
 </nav>
+
 
 
 </header>
@@ -272,7 +202,7 @@
                <!-- Producto 3 -->
                 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/pepino.avif" alt="Lavadora y Secadora Tecnomaster">
+                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/pepino.avif" alt="Pepinos">
                    <h3>Pepinos</h3>
                    <p>Precio: $70 1KG</p>
                 </article>
@@ -281,7 +211,7 @@
                <!-- Producto 4 -->
 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/Limon_persa.avif" alt="Ventilador Daiwa">
+                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/Limon_persa.avif" alt="Limones persa">
                    <h3>Limones Persa</h3>
                    <p>Precio: $200 1KG</p>
                 </article>
@@ -301,7 +231,7 @@
                   </article>
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/Ajies_morron.avif" alt="Ajies morron">
+                   <img src="../imagenes/productos/Alimentos/frutas_y_verduras/Ajies_morron.avif" alt="Ajies morrones">
                    <h3>Ajies morrones</h3>
                    <p>Precio: $80 la unidad</p>
                   </article>
@@ -313,14 +243,14 @@
                  </article>
               
                   <article class="producto">
-                   <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/manzana_amarilla.avif" alt="Manzanas amarilla">
+                   <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/manzana_amarilla.avif" alt="Manzanas amarillas">
                    <h3>Manzanas amarillas</h3>
                    <p>Precio: $50 1KG</p>
                   </article>
 
                   <article class="producto">
-                    <img src="../imagenes/productos/Alimentos/frutas_y_verduras/fresas.avif" alt="paquete de fresas">
-                    <h3>paquete de Fresas</h3>
+                    <img src="../imagenes/productos/Alimentos/frutas_y_verduras/fresas.avif" alt="Paquete de fresas">
+                    <h3>Paquete de Fresas</h3>
                     <p>Precio: $350 el paquete</p>
                   </article>
 
@@ -350,16 +280,16 @@
 
                <!-- Producto 1 -->
                  <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/pescado/tilapia_roja.avif" alt="televisor Samsung 75 pulgadas">
-                   <h3>tilapia roja</h3>
+                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/pescado/tilapia_roja.avif" alt="Tilapia roja fresca">
+                   <h3>Tilapia roja</h3>
                    <p>Precio: $65,000</p>
                  </article>
 
                <!-- Producto 2 -->
 
                <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/mariscos/camarones_pre-cocidos.avif" alt="Nevera LG">
-                   <h3>camarones pre-cocidos</h3>
+                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/mariscos/camarones_pre-cocidos.avif" alt="Camarones pre-cocidos">
+                   <h3>Camarones pre-cocidos</h3>
                    <p>Precio: $80,000</p>
                  </article>
                  
@@ -367,7 +297,7 @@
                <!-- Producto 3 -->
                 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/mariscos/camarones_crudos.avif" alt="Lavadora y Secadora Tecnomaster">
+                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/mariscos/camarones_crudos.avif" alt="Camarones crudos">
                    <h3>camarones crudos</h3>
                    <p>Precio: $33,000</p>
                  </article>
@@ -375,7 +305,7 @@
                <!-- Producto 4 -->
 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/pollo/pollo.avif" alt="Ventilador Daiwa">
+                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/pollo/pollo.avif" alt="Pollo don pollo">
                    <h3>pollo Don Pollo</h3>
                    <p>Precio: $3,000</p>
                  </article>
@@ -383,14 +313,14 @@
 
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/res/carne_de_res.avif" alt="Nevera LG">
-                   <h3>carne de res para hamburguesas</h3>
+                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/res/carne_de_res.avif" alt="Carnes de res para hamburguesas">
+                   <h3>Carne de res para hamburguesas</h3>
                    <p>Precio: $80,000</p>
                  </article>
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/cerdo/chuleta_de_cerdo.avif" alt="Nevera LG">
-                   <h3>chuleta de cerdo</h3>
+                   <img src="../imagenes/productos/Alimentos/carnes_pescados_mariscos/cerdo/chuleta_de_cerdo.avif" alt="Chuleta de cerdo">
+                   <h3>Chuleta de cerdo</h3>
                    <p>Precio: $80,000</p>
                  </article>
 
@@ -409,15 +339,15 @@
 
                <!-- Producto 1 -->
                  <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Despensa/condimentos/sal_marina_refisal.avif" alt="televisor Samsung 75 pulgadas">
+                   <img src="../imagenes/productos/Alimentos/Despensa/condimentos/sal_marina_refisal.avif" alt="Sal marina refisal">
                    <h3>Sal marina refisal</h3>
                    <p>Precio: $65,000</p>
                  </article>
                <!-- Producto 2 -->
 
                <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Despensa/condimentos/sazon_completo_maggi.avif" alt="Nevera LG">
-                   <h3>Sazon completo Maggi</h3>
+                   <img src="../imagenes/productos/Alimentos/Despensa/condimentos/sazon_completo_maggi.avif" alt="Sazón completo Maggi">
+                   <h3>Sazón completo Maggi</h3>
                    <p>Precio: $80,000</p>
                  </article>
                  
@@ -425,7 +355,7 @@
                <!-- Producto 3 -->
                 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Despensa/condimentos/sopita_doña_gallina.avif" alt="Lavadora y Secadora Tecnomaster">
+                   <img src="../imagenes/productos/Alimentos/Despensa/condimentos/sopita_doña_gallina.avif" alt="Sopita doña gallina">
                    <h3>Sopita Doña gallina</h3>
                    <p>Precio: $33,000</p>
                 </article>
@@ -434,7 +364,7 @@
                <!-- Producto 4 -->
 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Despensa/aceites/aceite_crisol.avif" alt="Ventilador Daiwa">
+                   <img src="../imagenes/productos/Alimentos/Despensa/aceites/aceite_crisol.avif" alt="Aceite Crisol">
                    <h3>Aceite Crisol</h3>
                    <p>Precio: $3,000</p>
                  </article>
@@ -442,7 +372,7 @@
 
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Despensa/condimentos/vinagre_baldom.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Despensa/condimentos/vinagre_baldom.avif" alt="Vinagre baldom">
                    <h3>Vinagre Baldom</h3>
                    <p>Precio: $80,000</p>
                  </article>
@@ -450,13 +380,13 @@
 
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Despensa/aceites/aceite_de_oliva_extra_virgen.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Despensa/aceites/aceite_de_oliva_extra_virgen.avif" alt="Aceite de oliva extra virgen">
                    <h3>Aceite de oliva extra virgen</h3>
                    <p>Precio: $80,000</p>
                  </article>
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Despensa/aderezos_y_salsas/mayonesa_baldom.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Despensa/aderezos_y_salsas/mayonesa_baldom.avif" alt="Mayonesa baldom">
                    <h3>Mayonesa Baldom</h3>
                    <p>Precio: $80,000</p>
                  </article>
@@ -475,7 +405,7 @@
 
                <!-- Producto 1 -->
                  <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/leche/leche_entera_rica.avif" alt="televisor Samsung 75 pulgadas">
+                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/leche/leche_entera_rica.avif" alt="Leche entera rica">
                    <h3>Leche entera rica</h3>
                    <p>Precio: $65,000</p>
                  </article>
@@ -483,7 +413,7 @@
                <!-- Producto 2 -->
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/huevos/huevos_30unidades.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/huevos/huevos_30unidades.avif" alt="Huevos 30 unidades">
                    <h3>Huevos 30 unidades</h3>
                    <p>Precio: $80,000</p>
                  </article>
@@ -492,7 +422,7 @@
                <!-- Producto 3 -->
                 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/queso/queso_gorgonzola.avif" alt="Lavadora y Secadora Tecnomaster">
+                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/queso/queso_gorgonzola.avif" alt="Queso gorgonzola">
                    <h3>Queso gorgonzola</h3>
                    <p>Precio: $33,000</p>
                  </article>
@@ -500,19 +430,19 @@
                <!-- Producto 4 -->
 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/queso/queso_gouda.avif" alt="Ventilador Daiwa">
+                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/queso/queso_gouda.avif" alt="Queso gouda">
                    <h3>Queso gouda</h3>
                    <p>Precio: $3,000</p>
                  </article>
                 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/yogurt/yogurt_de_fresa.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/yogurt/yogurt_de_fresa.avif" alt="Yogurt de fresa">
                    <h3>Yogurt de fresa</h3>
                    <p>Precio: $80,000</p>
                  </article>
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/yogurt/yogurt_natural.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/lacteos_y_huevos/yogurt/yogurt_natural.avif" alt="Yogurt natural">
                    <h3>Yogurt natural</h3>
                    <p>Precio: $80,000</p>
                  </article>
@@ -530,7 +460,7 @@
 
                <!-- Producto 1 -->
                  <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Bebidas/energizantes/gatorade_uva.avif" alt="televisor Samsung 75 pulgadas">
+                   <img src="../imagenes/productos/Alimentos/Bebidas/energizantes/gatorade_uva.avif" alt="Gatorade de uva">
                    <h3>Gatorade Uva</h3>
                    <p>Precio: $65,000</p>
                  </article>
@@ -538,7 +468,7 @@
                <!-- Producto 2 -->
 
                <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Bebidas/energizantes/red_bull.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Bebidas/energizantes/red_bull.avif" alt="Red bull">
                    <h3>Red Bull</h3>
                    <p>Precio: $80,000</p>
                  </article>
@@ -547,7 +477,7 @@
                <!-- Producto 3 -->
                 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Bebidas/jugo/jugo_naranja_rica.avif" alt="Lavadora y Secadora Tecnomaster">
+                   <img src="../imagenes/productos/Alimentos/Bebidas/jugo/jugo_naranja_rica.avif" alt="Jugo de naranja rica">
                    <h3>Jugo de Naranja Rica</h3>
                    <p>Precio: $33,000</p>
                  </article>
@@ -555,25 +485,25 @@
                <!-- Producto 4 -->
 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Bebidas/jugo/jugo_pera_santal.avif" alt="Ventilador Daiwa">
+                   <img src="../imagenes/productos/Alimentos/Bebidas/jugo/jugo_pera_santal.avif" alt="jugo de pera Santal">
                    <h3>Jugo de Pera Santal</h3>
                    <p>Precio: $3,000</p>
                  </article>
                 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Bebidas/refresco/coca_cola.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Bebidas/refresco/coca_cola.avif" alt="Coca cola">
                    <h3>Coca Cola</h3>
                    <p>Precio: $80,000</p>
                  </article>
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Bebidas/refresco/country_club_frambuesa.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Bebidas/refresco/country_club_frambuesa.avif" alt="Refresco Country club de frambuesa">
                    <h3>Country Club Frambuesa</h3>
                    <p>Precio: $80,000</p>
                  </article>
 
                  <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Bebidas/refresco/country_club_uva.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Bebidas/refresco/country_club_uva.avif" alt="Refresco Country club de uva">
                    <h3>Country Club Uva</h3>
                    <p>Precio: $80,000</p>
                  </article>
@@ -593,14 +523,14 @@
 
                <!-- Producto 1 -->
                  <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Enlatados/atun_dimar.avif" alt="televisor Samsung 75 pulgadas">
+                   <img src="../imagenes/productos/Alimentos/Enlatados/atun_dimar.avif" alt="Atún dimar">
                    <h3>Atún Dimar</h3>
                    <p>Precio: $65,000</p>
                  </article>
                <!-- Producto 2 -->
 
                <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Enlatados/gandules_verdes_goya.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Enlatados/gandules_verdes_goya.avif" alt="Guandules verdes Goya">
                    <h3>Gandules Verdes Goya</h3>
                    <p>Precio: $80,000</p>
                  </article>
@@ -609,7 +539,7 @@
                <!-- Producto 3 -->
                 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Enlatados/habichuelas_negras_goya.avif" alt="Lavadora y Secadora Tecnomaster">
+                   <img src="../imagenes/productos/Alimentos/Enlatados/habichuelas_negras_goya.avif" alt="Habichuelas negras gouya">
                    <h3>Habichuelas negras goya</h3>
                    <p>Precio: $33,000</p>
                 </article>
@@ -618,7 +548,7 @@
                <!-- Producto 4 -->
 
                 <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Enlatados/maiz_la_famosa.avif" alt="Ventilador Daiwa">
+                   <img src="../imagenes/productos/Alimentos/Enlatados/maiz_la_famosa.avif" alt="Maiz la famosa">
                    <h3>Maíz La Famosa</h3>
                    <p>Precio: $3,000</p>
                 </article>
@@ -626,20 +556,20 @@
 
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Enlatados/sardinas_gord.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Enlatados/sardinas_gord.avif" alt="Sardinas Gord">
                    <h3>Sardinas Gord</h3>
                    <p>Precio: $80,000</p>
                  </article>
 
 
                   <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Enlatados/salchichas_jaja.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Enlatados/salchichas_jaja.avif" alt="Salchichas jaja">
                    <h3>Salchichas Jaja</h3>
                    <p>Precio: $80,000</p>
                  </article>
 
                  <article class="producto">
-                   <img src="../imagenes/productos/Alimentos/Enlatados/tomates_pelados.avif" alt="Nevera LG">
+                   <img src="../imagenes/productos/Alimentos/Enlatados/tomates_pelados.avif" alt="Tomates pelados la famosa">
                    <h3>Tomates Pelados la famosa</h3>
                    <p>Precio: $80,000</p>
                  </article>
@@ -674,8 +604,8 @@
 
                  <!-- Enlaces legales -->
                 <div class="footer-links">
-                  <a href="legal/privacy.html" title="Política de Privacidad">Política de Privacidad</a> |
-                  <a href="legal/terms.html" title="Términos de Uso">Términos de Uso</a>
+                  <a href="../legal/privacy.html" title="Política de Privacidad">Política de Privacidad</a> |
+                  <a href="../legal/terms.html" title="Términos de Uso">Términos de Uso</a>
                 </div>
             </div>
 
