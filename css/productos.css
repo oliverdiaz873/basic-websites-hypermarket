@@ -49,7 +49,7 @@ header  img {
     height: auto;
 }
 
-header  h1 {
+header  div {
     margin: 0;
     font-size: 22px;
     letter-spacing: 1px;
@@ -64,7 +64,7 @@ header a.logo-header { /* logo clickeable */
     text-decoration: none; /* quitar subrayado */
     color: white; /* para que el h1 mantenga el color */
 }
-header a.logo-header h1 {
+header a.logo-header div {
     margin: 0;
 }
 
@@ -86,7 +86,7 @@ main {
 }
 
 
-/* div */
+/* Contenedor del producto */
 .contenedor-producto {
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +106,7 @@ main {
   text-align: left;
 }
 
-.info-producto h2 {
+.info-producto h1 {
   font-size: 28px;
   margin-bottom: 10px;
 }
@@ -326,10 +326,7 @@ footer {
 
 
 
-
-
-
-/* Estilos generales del breadcrumb */
+/* Estilos del breadcrumb */
 .breadcrumb {
   display: inline-block; /* el ancho se adapta al contenido */
   background-color: rgba(0,0,0,0.8);
@@ -341,8 +338,6 @@ footer {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   margin: 20px;
   
- 
-
   /* Centrado bajo el header fijo */
   position: fixed;
   top: 80px;                /* ajusta según la altura real del header */
@@ -374,14 +369,7 @@ footer {
   font-weight: bold;
   color: #ffcc00;
   
- 
 }
-
-
-
-
-
-
 
 
 
@@ -492,10 +480,6 @@ footer {
     width: 100%;
     border-radius: 10px;
 }
-
-
-
-
 
 
 

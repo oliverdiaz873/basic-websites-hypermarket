@@ -41,35 +41,37 @@
 
 
 
-
-
 <body id="fondo_alimentos">
 
 
  <header>
        
-       <h1>  <!-- Logo -->
+       <div>  <!-- Logo -->
           <a href="../../../index.html" class="logo-header" aria-label="Ir a la página principal de Hipermercado Superior">
              <img src="../../../imagenes/logo/logo.jpeg" alt="Logo de Hipermercado Superior">
              Hipermercado Superior
           </a>
-       </h1>
+       </div>
 
-      <nav class="menu">
+   <!-- barra de navegación -->
+   <nav class="menu" role="navigation" aria-label="Menú principal">
       <ul>
 
         <!-- Nivel 1 -->
         <li><a href="../../../index.html">Inicio</a></li>
 
         <!-- Nivel 1: Categorías -->
-        <li>
-            <a href="javascript:void(0)">Categorías</a>
+        <!-- href="#" indica que es un enlace vacío, # significa no ir a ninguna página en particular -->
+        <!-- aria-haspopup="true" Sirve para lectores de pantalla (personas no videntes) para que sepan que ese enlace tiene un submenú desplegable. -->
+        <!-- aria-expanded="false" significa “Este menú actualmente está cerrado”. -->
+        <li><a href="#" aria-haspopup="true" aria-expanded="false">Categorías</a>
+
             <ul>
 
                 <!-- Nivel 2: Alimentos -->
                 <li>
                     <a href="../../../categorias/Alimentos.html">Alimentos</a>
-                    <ul>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="../../../categorias/Alimentos.html#frutas_y_verduras">Frutas y Verduras</a></li>
                         <li><a href="../../../categorias/Alimentos.html#despensa">Despensa</a></li>
                         <li><a href="../../../categorias/Alimentos.html#carnes_pescados_mariscos">Carnes, Pescados y Mariscos</a></li>
@@ -82,7 +84,7 @@
                 <!-- Nivel 2: Electrodomésticos -->
                 <li>
                     <a href="../../../categorias/Electrodomesticos.html">Electrodomésticos</a>
-                    <ul>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="../../../categorias/Electrodomesticos.html#cocina">Cocina</a></li>
                         <li><a href="../../../categorias/Electrodomesticos.html#lavado">Lavado</a></li>
                         <li><a href="../../../categorias/Electrodomesticos.html#climatizacion">Climatización</a></li>
@@ -92,7 +94,7 @@
                 <!-- Nivel 2: Tecnología -->
                 <li>
                     <a href="../../../categorias/Tecnologia.html">Tecnología</a>
-                    <ul>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="../../../categorias/Tecnologia.html#televisores">Televisores</a></li>
                         <li><a href="../../../categorias/Tecnologia.html#laptops">Laptops</a></li>
                         <li><a href="../../../categorias/Tecnologia.html#tablets">Tablets</a></li>
@@ -104,7 +106,7 @@
                 <!-- Nivel 2: Ropa -->
                 <li>
                     <a href="../../../categorias/Ropa.html">Ropa</a>
-                    <ul>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="../../../categorias/Ropa.html#pantalones_para_hombres">Pantalones para Hombres</a></li>
                         <li><a href="../../../categorias/Ropa.html#pantalones_para_mujeres">Pantalones para Mujeres</a></li>
                         <li><a href="../../../categorias/Ropa.html#pantalones_para_niños">Pantalones para Niños</a></li>
@@ -116,7 +118,7 @@
                 <!-- Nivel 2: Muebles y Decoración -->
                 <li>
                     <a href="../../../categorias/muebles_y_decoracion.html">Muebles y Decoración</a>
-                    <ul>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="../../../categorias/muebles_y_decoracion.html#sofas">Sofás</a></li>
                         <li><a href="../../../categorias/muebles_y_decoracion.html#sillones">Sillones</a></li>
                         <li><a href="../../../categorias/muebles_y_decoracion.html#mesas">Mesas</a></li>
@@ -127,7 +129,7 @@
                 <!-- Nivel 2: Farmacia -->
                 <li>
                     <a href="../../../categorias/Farmacia.html">Farmacia</a>
-                    <ul>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="../../../categorias/Farmacia.html#analgesicos">Analgésicos</a></li>
                         <li><a href="../../../categorias/Farmacia.html#dermocosmetica">Dermocosmética</a></li>
                         <li><a href="../../../categorias/Farmacia.html#vitaminas_y_minerales">Vitaminas y Minerales</a></li>
@@ -138,7 +140,7 @@
                 <!-- Nivel 2: Ferretería -->
                 <li>
                     <a href="../../../categorias/Ferreteria.html">Ferretería</a>
-                    <ul>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="../../../categorias/Ferreteria.html#herramientas_manuales">Herramientas Manuales</a></li>
                         <li><a href="../../../categorias/Ferreteria.html#pinturas_y_acabados">Pinturas y Acabados</a></li>
                         <li><a href="../../../categorias/Ferreteria.html#electricidad">Electricidad</a></li>
@@ -149,7 +151,7 @@
                 <!-- Nivel 2: Juguetes -->
                 <li>
                     <a href="../../../categorias/juguetes.html">Juguetes</a>
-                    <ul>
+                    <ul> <!-- Nivel 3: -->
                         <li><a href="../../../categorias/juguetes.html#juguetes_para_niños">Juguetes para Niños</a></li>
                         <li><a href="../../../categorias/juguetes.html#juguetes_para_niñas">Juguetes para Niñas</a></li>
                     </ul>
@@ -160,7 +162,7 @@
 
         <!-- Nivel 1 -->
         <li><a href="../../../index.html#ofertas">Ofertas</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="../../../contacto.html">Contacto</a></li>
 
     </ul>
 </nav>
@@ -169,16 +171,14 @@
 
 </header>
 
-
         <!-- Breadcrumb o indicador de ubicación -->
-        <nav class="breadcrumb">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
           <a href="../../../index.html">Inicio</a> ›
           <span>Categorías</span> ›
           <a href="../../../categorias/Alimentos.html">Alimentos</a> ›
           <span>Frutas y Verduras</span> ›
           <span class="actual">Manzanas Rojas</span>
         </nav>
-
 
   <main class="producto-main">
 
@@ -193,14 +193,14 @@
             </a>
          </figure>
 
-         <!-- Modal -->
-         <div id="img-full" class="modal-imagen">
+         <!-- Modal del producto -->
+         <div id="img-full" class="modal-imagen" aria-modal="true" role="dialog" aria-label="Imagen ampliada de Manzanas Rojas">
             <a href="#close" class="cerrar" aria-label="Cerrar imagen ampliada"></a>
             <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/manzana_roja.avif" alt="Manzanas Rojas ampliada">
          </div>
 
     <div class="info-producto"> <!-- Información del producto -->
-        <h2>Manzanas Rojas</h2>
+        <h1>Manzanas Rojas</h1>
         <p class="precio">$65.00 / 1 kg</p>
 
         <p class="descripcion">
@@ -228,80 +228,54 @@
       <h2>Productos Similares</h2>
 
       <div class="productos-container">
-
-        <figure class="producto">
-             <a href="#modal-verde">
-                <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/manzana_verde.avif" alt="Manzanas Verdes">
-             </a>
-
+ 
+         <a href="manzanas_verdes.html">
+          <figure class="producto">
+            <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/manzana_verde.avif" loading="lazy" alt="Manzanas Verdes">
             <h3>Manzanas verdes</h3>
             <p>Precio: $45.00 / 1 kg</p>
-        </figure>
+          </figure>
+         </a>
         
+        <a href="manzanas_amarillas.html">
         <figure class="producto">
-             <a href="#modal-amarilla">
-               <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/manzana_amarilla.avif" alt="Manzanas Amarilla">
-             </a>
-
+           <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/manzana_amarilla.avif" loading="lazy" alt="Manzanas Amarillas">
            <h3>Manzanas amarillas</h3>
-           <p>$50.00 / 1 kg</p>
+           <p>Precio: $50.00 / 1 kg</p>
         </figure>
+        </a>
 
+        <a href="paquete_de_fresas.html">
         <figure class="producto">
-             <a href="#modal-fresa">
-                <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/fresas.avif" alt="Paquete de fresas frescas">
-             </a>
-
+           <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/fresas.avif" loading="lazy" alt="Paquete de fresas frescas">
            <h3>Paquete de Fresas</h3>
           <p>Precio: $350.00 / 1 paquete</p>
         </figure>
+        </a>
 
+        <a href="uvas_moradas.html">
         <figure class="producto">
-             <a href="#modal-uva">
-              <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/uva_morada.avif" alt="Uvas Moradas">
-             </a>
-
+           <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/uva_morada.avif" loading="lazy" alt="Uvas Moradas">
            <h3>Uvas Moradas</h3>
-           <p>$150.00 / 1 kg</p>
+           <p>Precio: $150.00 / 1 kg</p>
         </figure>
+        </a>
 
+        <a href="mandarinas.html">
         <figure class="producto">
-            <a href="#modal-mandarina">
-             <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/mandarinas.avif" alt="Mandarinas">
-            </a>
-
+             <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/mandarinas.avif" loading="lazy" alt="Mandarinas">
              <h3>Mandarinas</h3>
              <p>Precio: $100.00 / 1 kg</p>
         </figure>
+        </a>
 
-
-        <!-- Modales de productos similares -->
-
-<div id="modal-verde" class="modal-imagen">
-    <a href="#close" class="cerrar"></a>
-    <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/manzana_verde.avif" alt="Manzanas Verdes">
-</div>
-
-<div id="modal-amarilla" class="modal-imagen">
-    <a href="#close" class="cerrar"></a>
-    <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/manzana_amarilla.avif" alt="Manzanas Amarillas">
-</div>
-
-<div id="modal-fresa" class="modal-imagen">
-    <a href="#close" class="cerrar"></a>
-    <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/fresas.avif" alt="Paquete de Fresas">
-</div>
-
-<div id="modal-uva" class="modal-imagen">
-    <a href="#close" class="cerrar"></a>
-    <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/uva_morada.avif" alt="Uvas Moradas">
-</div>
-
-<div id="modal-mandarina" class="modal-imagen">
-    <a href="#close" class="cerrar"></a>
-    <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/mandarinas.avif" alt="Mandarinas">
-</div>
-
+         <a href="limones_persa.html">
+            <figure class="producto">
+               <img src="../../../imagenes/productos/Alimentos/frutas_y_verduras/limon_persa.avif" loading="lazy" alt="Limones Persa">
+               <h3>Limones Persa</h3>
+               <p>Precio: $200 / 1 kg</p>
+            </figure>
+         </a>
 
       </div>
     </section>
@@ -314,21 +288,21 @@
       <div class="social-icons">
 
                    <a href="https://facebook.com/tuweb" target="_blank" rel="nofollow noopener noreferrer" aria-label="Visítanos en Facebook">
-                    <img src="../../../imagenes/iconos/redes/facebook.png" alt="ir a facebook de Hipermercado Superior">
+                    <img src="../../../imagenes/iconos/redes/facebook.png" alt="Facebook de Hipermercado Superior">
                    </a>
 
                    <a href="https://twitter.com/tuweb" target="_blank" rel="nofollow noopener noreferrer" aria-label="Visítanos en X (antes Twitter)">
-                    <img src="../../../imagenes/iconos/redes/x.png" alt="ir a x de Hipermercado Superior">
+                    <img src="../../../imagenes/iconos/redes/x.png" alt="X de Hipermercado Superior">
                    </a>
 
                    <a href="https://instagram.com/tuweb" target="_blank" rel="nofollow noopener noreferrer" aria-label="Visítanos en Instagram">
-                    <img src="../../../imagenes/iconos/redes/instagram.png" alt="ir a instagram de Hipermercado Superior">
+                    <img src="../../../imagenes/iconos/redes/instagram.png" alt="Instagram de Hipermercado Superior">
                    </a>
       </div>
 
       <div class="footer-links">
-        <a href="../legal/privacy.html">Política de Privacidad</a> |
-        <a href="../legal/terms.html">Términos de Uso</a>
+        <a href="../../../legal/privacy.html">Política de Privacidad</a> |
+        <a href="../../../legal/terms.html">Términos de Uso</a>
       </div>
 
     </div>
