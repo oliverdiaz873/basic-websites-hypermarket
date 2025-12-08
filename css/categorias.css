@@ -25,6 +25,23 @@ body {
     background-image: url('../imagenes/fondos/fondo.avif');
 }
 
+#fondo_electrodomesticos {
+    background-image: url('../imagenes/fondos/electrodomesticos.jpg');
+}
+
+#fondo_tecnologia {
+    background-image: url('../imagenes/fondos/tecnologia.jpg');
+}
+
+#fondo_ropa {
+    background-image: url('../imagenes/fondos/ropa.jpg');
+}
+
+#fondo_farmacia {
+    background-image: url('../imagenes/fondos/farmacia.jpg');
+}
+
+
 
 
 /* Header */
@@ -451,10 +468,30 @@ footer {
 
 
 
-
-
-
 /* margin-top para centrar la sección del vínculo cuando la visitemos */
 .destino {
     scroll-margin-top: 155px; 
+}
+
+
+
+/* Animación de scroll por sección */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fade-in-up 2.5s -0.1s ease-out both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+/* Animación */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
