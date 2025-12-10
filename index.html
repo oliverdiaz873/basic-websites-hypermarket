@@ -26,7 +26,6 @@
     <meta name="twitter:description" content="Tu destino para compras inteligentes con la mejor selección de productos.">
     <meta name="twitter:image" content="https://www.hipermercadosuperior.com/imagenes/logo.png">
 
-
     <!-- Título, CSS y Fuentes-->
     <title>Hipermercado Superior | Compras inteligentes y productos de calidad</title>
     <link rel="stylesheet" href="css/style.css">
@@ -45,14 +44,14 @@
 
     <header>
 
-         <h1>  <!-- Logo -->
+         <div>  <!-- Logo -->
           <a href="index.html" class="logo-header" aria-label="Ir a la página principal de Hipermercado Superior">
              <img src="imagenes/logo/logo.jpeg" alt="Logo de Hipermercado Superior">
-              Hipermercado Superior
+             <h1>Hipermercado Superior</h1>
           </a>
-        </h1>
+        </div>
 
-
+   <!-- Menú de navegación -->
    <nav class="menu" role="navigation" aria-label="Menú principal">
       <ul>
 
@@ -61,7 +60,7 @@
 
         <!-- Nivel 1: Categorías -->
         <!-- href="#" indica que es un enlace vacío, # significa no ir a ninguna página en particular -->
-        <!-- Nivel 1: aria-haspopup="true" Sirve para lectores de pantalla (personas no videntes) para que sepan que ese enlace tiene un submenú desplegable. -->
+        <!-- aria-haspopup="true" Sirve para lectores de pantalla (personas no videntes) para que sepan que ese enlace tiene un submenú desplegable. -->
         <!-- aria-expanded="false" significa “Este menú actualmente está cerrado”. -->
         <li><a href="#" aria-haspopup="true" aria-expanded="false">Categorías</a>
 
@@ -169,7 +168,6 @@
 
     </header>
 
-
      <main> <!--main-->
 
           <!-- Sección: Productos Destacados -->
@@ -179,54 +177,60 @@
              <div class="productos-container">
 
                <!-- Producto 1 -->
+                <a href="productos/tecnologia/televisores/tv_samsung_75.html">
                  <article class="producto">
-                   <img src="imagenes/productos/Tecnologia/Televisores/TV_led_samsung.avif" alt="televisor Samsung 75 pulgadas">
+                   <img src="imagenes/productos/Tecnologia/Televisores/TV_led_samsung.avif" alt="televisor Samsung 75 pulgadas" loading="lazy">
                    <h3>Televisor samsung 75 pulgadas</h3>
-                   <p>Precio: $65,000</p>
+                   <p>Precio: $44,000</p>
                  </article>
+                 </a>
 
                <!-- Producto 2 -->
-
+                <a href="productos/electrodomesticos/cocina/nevera_lg.html">
                <article class="producto">
-                   <img src="imagenes/productos/Electrodomesticos/cocina/Neveras/Nevera_LG.png" alt="Nevera LG">
+                   <img src="imagenes/productos/Electrodomesticos/cocina/Neveras/Nevera_LG.png" alt="Nevera LG" loading="lazy">
                    <h3>Nevera LG</h3>
                    <p>Precio: $80,000</p>
                </article>
+                </a>
                  
 
                <!-- Producto 3 -->
-
+                <a href="productos/electrodomesticos/climatizacion/ventilador_daiwa.html">
                 <article class="producto">
-                   <img src="imagenes/productos/Electrodomesticos/climatizacion/ventiladores/ventilador_Daiwa.png" alt="Ventilador Daiwa de mesa color negro">
+                   <img src="imagenes/productos/Electrodomesticos/climatizacion/ventiladores/ventilador_Daiwa.png" alt="Ventilador Daiwa de mesa color negro" loading="lazy">
                    <h3>Ventilador Daiwa</h3>
-                   <p>Precio: $3,000</p>
+                   <p>Precio: $15,000</p>
                 </article>
+                </a>
                 
                  <!-- Producto 4 -->
-
+                   <a href="productos/muebles_y_decoracion/sofas/sofa_cama_blanco.html">
                   <article class="producto">
-                   <img src="imagenes/productos/Muebles_y_decoracion/sofa/sofa_cama_blanco.png" alt="Sofá cama blanco">
-                   <h3>Sofa cama blanco</h3>
-                   <p>Precio: $80,000</p>
+                   <img src="imagenes/productos/Muebles_y_decoracion/sofa/sofa_cama_blanco.png" alt="Sofá cama blanco" loading="lazy">
+                   <h3>Sofá cama blanco</h3>
+                   <p>Precio: $9,000</p>
                   </article>
+                  </a>
 
                     <!-- Producto 5 -->
-
+                   <a href="productos/alimentos/carnes_pescados_y_mariscos/carne_de_res_para_hamburguesas.html">
                   <article class="producto">
-                   <img src="imagenes/productos/Alimentos/carnes_pescados_mariscos/res/carne_de_res.avif" alt="Carne de res para hamburguesa">
-                   <h3>Carne de res para hamburguesa</h3>
-                   <p>Precio: $80,000</p>
+                   <img src="imagenes/productos/Alimentos/carnes_pescados_mariscos/res/carne_de_res.avif" alt="Carne de Res para Hamburguesas" loading="lazy">
+                   <h3>Carne de Res para Hamburguesas</h3>
+                   <p>Precio: $370.00 /1 LB</p>
                   </article>
+                   </a>
 
                      <!-- Producto 6 -->
-
+                   <a href="productos/Alimentos/carnes_pescados_y_mariscos/pollo_entero_don_pollo.html">
                   <article class="producto">
-                   <img src="imagenes/productos/Alimentos/carnes_pescados_mariscos/pollo/pollo.avif" alt="Pollo fresco entero">
-                   <h3>Pollo entero don pollo</h3>
-                   <p>$79 / 1LB </p>
+                   <img src="imagenes/productos/Alimentos/carnes_pescados_mariscos/pollo/pollo.avif" alt="Pollo fresco entero" loading="lazy">
+                   <h3>Pollo Entero Don pollo</h3>
+                   <p>$300.00 / 1 unidad </p>
                   </article>
-
-                  
+                  </a>
+     
             </div>
       </section>
 
@@ -237,59 +241,69 @@
              <div class="productos-container">
 
                <!-- producto 1 -->
+                <a href="productos/Alimentos/Frutas_y_verduras/manzanas_verdes.html">
                <article class="producto">
-                  <img src="imagenes/productos/Alimentos/frutas_y_verduras/manzana_verde.avif" alt="Descuento en manzanas verdes">
+                  <img src="imagenes/productos/Alimentos/frutas_y_verduras/manzana_verde.avif" alt="Descuento en Manzanas Verdes" loading="lazy">
                   <h3>Manzanas Verdes -20%</h3>
                   <p>
-                    Antes: <span class="precio-antiguo">RD$ 120.00</span>
+                    Antes: <span class="precio-antiguo">RD$ 56.25/ 1 KG</span>
                     <span class="flecha">→</span>
-                    <span class="precio-nuevo">Ahora: RD$ 96.00</span>
+                    <span class="precio-nuevo">Ahora: RD$ 45.00/ 1 KG</span>
                   </p>
                 </article>
+                </a>
 
               <!-- producto 2 -->
-             <article class="producto">
-                <img src="imagenes/productos/Alimentos/lacteos_y_huevos/huevos/huevos_30unidades.avif" alt="huevos en oferta">
+               <a href="productos/Alimentos/lacteos_y_huevos/huevos.html">
+              <article class="producto">
+                <img src="imagenes/productos/Alimentos/lacteos_y_huevos/huevos/huevos_30unidades.avif" alt="Huevos en Oferta" loading="lazy">
                 <h3>Huevos -10%</h3>
                 <p>
-                  Antes: <span class="precio-antiguo">RD$ 260.00</span>
+                  Antes: <span class="precio-antiguo">RD$ 222.22 / 30 unidades</span>
                   <span class="flecha">→</span>
-                  <span class="precio-nuevo">Ahora: RD$ 234.00</span>
+                  <span class="precio-nuevo">Ahora: RD$ 200.00 / 30 unidades</span>
                 </p>
-            </article>
+             </article>
+             </a>
 
             <!-- producto 3-->
+             <a href="productos/electrodomesticos/cocina/freezer_7_pies.html">
             <article class="producto">
-              <img src="imagenes/productos/Electrodomesticos/cocina/freezer/freezer_7pies.png" alt="freezer en oferta">
+              <img src="imagenes/productos/Electrodomesticos/cocina/freezer/freezer_7pies.png" alt="Freezer en Oferta" loading="lazy">
               <h3>Freezer 7 pies -15%</h3>
               <p>
-                Antes: <span class="precio-antiguo">RD$ 29,000.00</span>
+                Antes: <span class="precio-antiguo">RD$ 19,411</span>
                 <span class="flecha">→</span>
-                <span class="precio-nuevo">Ahora: RD$ 24,650.00</span>
+                <span class="precio-nuevo">Ahora: RD$ 16,500</span>
               </p>
             </article>
+            </a>
 
           <!-- producto 4 -->
+           <a href="productos/tecnologia/celulares/celular_a26.html">
           <article class="producto">
-              <img src="imagenes/productos/Tecnologia/Celulares/celular_samsung_A26.png" alt="Oferta en celulares samsung">
+              <img src="imagenes/productos/Tecnologia/Celulares/celular_samsung_A26.png" alt="Oferta en Celulares Samsung" loading="lazy">
               <h3>Celular Samsung A26 -10%</h3>
               <p>
-                Antes: <span class="precio-antiguo">RD$ 12,000.00</span>
+                Antes: <span class="precio-antiguo">RD$ 44,444</span>
                 <span class="flecha">→</span>
-                <span class="precio-nuevo">Ahora: RD$ 10,800.00</span>
+                <span class="precio-nuevo">Ahora: RD$ 40,000</span>
              </p>
             </article>
+            </a>
 
          <!-- producto 5 -->
+          <a href="productos/electrodomesticos/cocina/cilindro_duragas.html">
          <article class="producto">
-            <img src="imagenes/productos/Electrodomesticos/cocina/Cilindros_de_gas/cilindro_de_gas_duragas.avif" alt="Oferta en cilindros de gas">
+            <img src="imagenes/productos/Electrodomesticos/cocina/Cilindros_de_gas/cilindro_de_gas_duragas.avif" alt="Oferta en Cilindros de Gas" loading="lazy">
             <h3>Cilindros de Gas -15%</h3>
             <p>
-                Antes: <span class="precio-antiguo">RD$ 1,500.00</span>
+                Antes: <span class="precio-antiguo">RD$ 6,117</span>
                 <span class="flecha">→</span>
-                <span class="precio-nuevo">Ahora: RD$ 1,275.00</span>
+                <span class="precio-nuevo">Ahora: RD$ 5,200</span>
             </p>
-        </article>
+         </article>
+         </a>
 
     </div>
 </section>
@@ -299,7 +313,7 @@
         <!-- Sección: Sobre Nosotros -->
         <section class="sobre-nosotros reveal">
              <div class="contenedor">
-               <img src="imagenes/logo/logo.jpeg" alt="logo del Hipermercado Superior">
+               <img src="imagenes/logo/logo.jpeg" alt="logo del Hipermercado Superior" loading="lazy">
                  <div class="texto">
                   <h2>Sobre Nosotros</h2>
                   <p>En <strong>Hipermercado Superior</strong> trabajamos para ofrecerte calidad, variedad y precios justos. 

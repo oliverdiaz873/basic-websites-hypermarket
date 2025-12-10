@@ -1,6 +1,4 @@
 
-
-
 /* Reset básico */
 html, body {
     margin: 0;
@@ -44,7 +42,7 @@ header  img {
     height: auto;
 }
 
-header  h1 {
+header  div {
     margin: 0;
     font-size: 22px;
     letter-spacing: 1px;
@@ -59,7 +57,7 @@ header a.logo-header { /* logo clickeable */
     text-decoration: none; /* quitar subrayado */
     color: white; /* para que el h1 mantenga el color */
 }
-header a.logo-header h1 {
+header a.logo-header div {
     margin: 0;
 }
 
@@ -210,23 +208,7 @@ footer {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* MAIN */
 .politica-container {
     max-width: 900px;
     margin: 120px auto 40px auto; /* Evita que se tape con el header */
@@ -234,8 +216,6 @@ footer {
     padding: 30px;
     border-radius: 10px;
     color: #fff;
-    
-
 }
 
 .politica-container > h1:first-child {
@@ -265,5 +245,5 @@ footer {
 .politica-container p {
   font-size: 18px;
   text-align: left;
-  line-height: 1.5;         /* ayuda con la legibilidad en móviles */
+  line-height: 1.5;  /* ayuda con la legibilidad en móviles */
 }

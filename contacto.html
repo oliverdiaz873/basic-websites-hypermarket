@@ -32,23 +32,22 @@
     <link rel="stylesheet" href="css/fonts.css">
 
     <!-- Favicons -->
-    <link rel="icon" href="../imagenes/iconos/favicon/icon-16x16.jpg" type="image/jpg" sizes="16x16">
-    <link rel="icon" href="../imagenes/iconos/favicon/icon-32x32.jpg" type="image/jpg" sizes="32x32">
-    <link rel="icon" href="../imagenes/iconos/favicon/icon-48x48.jpg" type="image/jpg" sizes="48x48">
+    <link rel="icon" href="imagenes/iconos/favicon/icon-16x16.jpg" type="image/jpg" sizes="16x16">
+    <link rel="icon" href="imagenes/iconos/favicon/icon-32x32.jpg" type="image/jpg" sizes="32x32">
+    <link rel="icon" href="imagenes/iconos/favicon/icon-48x48.jpg" type="image/jpg" sizes="48x48">
 </head>
-
 
 
 <body>
 
      <header>
 
-         <h1>  <!-- Logo -->
+         <div>  <!-- Logo -->
           <a href="index.html" class="logo-header" aria-label="Ir a la página principal de Hipermercado Superior">
              <img src="imagenes/logo/logo.jpeg" alt="Logo de Hipermercado Superior">
-             Hipermercado Superior
+              Hipermercado Superior
           </a>
-       </h1>
+       </div>
 
         <nav class="menu" role="navigation" aria-label="Menú principal">
       <ul>
@@ -165,12 +164,7 @@
 
      
 
-
 </header>
-
-
-
-  
 
     <main class="contacto-container">
         
@@ -180,27 +174,24 @@
 
             <div class="input-box">
               <label for="nombre">Nombre:</label>
-              <input type="text" placeholder="Escribe tu nombre aquí..." required>
+              <input  id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre aquí..." required>
             </div>
             
             
             <div class="input-box">
               <label for="email">Email:</label>
-              <input type="email" placeholder="tuemail@gmail.com" required>
+              <input id="email" name="email" type="email" placeholder="tuemail@gmail.com" required>
             </div>
             
             <div class="input-box">
                  <label for="telefono">Teléfono:</label>
-                 <input type="text" placeholder="Escribe tu teléfono aquí...">
+                 <input id="telefono" name="telefono" type="text" placeholder="Escribe tu teléfono aquí...">
             </div>
 
-            
-            
              <div class="input-box">
-            <label>Mensaje:</label>
-            <textarea rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
             </div>
-
 
 
             <button type="submit">Enviar</button>

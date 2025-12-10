@@ -391,11 +391,10 @@ footer {
     text-decoration: underline;
 }
 
-/* margin-top para centrar la sección del vínculo cuando la visitemos */
+/* margin-top necesario para centrar la sección del vínculo cuando la visitemos */
 .destino {
     scroll-margin-top: 130px; 
 }
-
 
 
 

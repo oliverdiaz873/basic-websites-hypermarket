@@ -33,7 +33,6 @@ header {
     top: 20px;                 /* margen superior */
     left: 50%;                 /* posición horizontal desde el centro */
     transform: translateX(-50%); /* centra el header horizontalmente de forma perfecta */
-    width: fit-content;        /* ancho según contenido */
     z-index: 1000;    /* el header Siempre estará visible por encima de otros elementos de la página en el eje z */
 }
 
@@ -42,7 +41,7 @@ header  img {
     height: auto;
 }
 
-header  h1 {
+header  div {
     margin: 0;
     font-size: 22px;
     letter-spacing: 1px;
@@ -57,7 +56,7 @@ header a.logo-header { /* logo clickeable */
     text-decoration: none; /* quitar subrayado */
     color: white; /* para que el h1 mantenga el color */
 }
-header a.logo-header h1 {
+header a.logo-header div {
     margin: 0;
 }
 
@@ -235,17 +234,10 @@ footer {
 }
 
 
-
-
-
-
 /* margin-top para centrar la sección del vínculo cuando la visitemos */
 .destino {
     scroll-margin-top: 130px; 
 }
-
-
-
 
 
 /* SECCIÓN GENERAL DE CONTACTO */
@@ -255,15 +247,6 @@ section#contacto {
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -283,6 +266,8 @@ main.contacto-container {
 
 }
 
+/* h1 del form */
+
 main.contacto-container .contacto-form h1 {
     color: #fff;
     font-size: 30px;
@@ -292,12 +277,9 @@ main.contacto-container .contacto-form h1 {
 }
 
 .contacto-container .input-box {
-
     width: 100%;
     height: 70px;
     margin: 30px 0;
-
-    
 }
 
 .input-box {
@@ -330,8 +312,6 @@ main.contacto-container .contacto-form h1 {
 }
 
 
-
-
 /* Estilo textarea igual que inputs */
 .contacto-form textarea {
     width: 100%;
@@ -347,9 +327,8 @@ main.contacto-container .contacto-form h1 {
      resize: none;  /* desactiva el cambio de tamaño */
     overflow: auto;         /* permite scroll interno */
     scrollbar-width: none;  
-
      padding: 40px 20px;  /* mismo padding horizontal */
-    box-sizing: border-box;
+    
 }
 
 .contacto-form textarea::-webkit-scrollbar {
@@ -378,10 +357,6 @@ main.contacto-container .contacto-form h1 {
     font-weight: 600;
     margin-left: 10px;
 }
-
-
-
-
 
 
 .contacto-form button {
