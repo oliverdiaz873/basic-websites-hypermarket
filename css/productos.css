@@ -303,9 +303,6 @@ section > * {
 
 
 
-
-
-
 /* footer */
 footer {
     color: white;
@@ -399,7 +396,7 @@ footer {
 
 
 
-/* Sección Productos Destacados y ofertas */
+/* Sección Productos Similares */
 
 .productos-similares {
     padding: 30px 20px;
@@ -432,6 +429,8 @@ footer {
     width: 200px;
     transition: transform 0.3s, box-shadow 0.3s;
      flex: 0 0 auto; /* evita que se encojan */
+     height: 290px;       /* Ajusta la altura  */
+    overflow: hidden;     /* Oculta lo que se salga */
 }
 
 
