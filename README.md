@@ -26,7 +26,7 @@ It is part of the `basic-websites` category, which includes other simple web pro
 
 - HTML5
 - CSS3
-- Javascript
+- JavaScript
 ---
 
 ## License
