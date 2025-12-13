@@ -592,6 +592,7 @@ footer {
     padding: 20px;         /* padding interno */
     box-sizing: border-box; /* incluye padding en el ancho */
     text-align: center;    /* centrado del contenido interno */
+    font-size: 20px;
     }
 
     .footer-content {
@@ -608,7 +609,7 @@ footer {
     }
 
     .footer-links a {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     html, body {
@@ -621,3 +622,209 @@ footer {
     }
 
 }
+
+
+
+
+@media (max-width: 390px) {
+
+    /* Header horizontal */
+    header {
+        flex-direction: row; /* mantener horizontal */
+        justify-content: center; /* centrar contenido */
+        width: fit-content; /* ajustar el ancho al tamaño del contenido */
+        padding: 5px;
+        border-radius: 8px;
+        gap: 8px;
+        flex-wrap: wrap; /* permite que el logo y h1 bajen si no caben en una línea */
+        margin: 10px auto;
+    }
+
+    header .logo-header {
+        gap: 4px;
+        flex: 1 1 auto; /* permite que se ajuste al espacio disponible */
+        justify-content: center;
+    }
+
+    header img {
+        width: 35px; /* reducir tamaño del logo */
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 18px;
+        text-align: center;
+        flex: 1 1 auto; /* se adapta al espacio disponible */
+    }
+
+    /* menú */
+    nav.menu > ul {
+       display: flex;
+       gap: 0px; /* espacio entre los enlaces de nivel 1 */
+       font-size: 16px;
+       
+    }
+   
+    /* Nivel 2 oculto por defecto */
+      nav.menu > ul > li > ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: -80px;
+      flex-direction: column;
+      width: fit-content;      
+      max-width: 70vw;          /* no sobrepasar el ancho de la pantalla */
+      z-index: 1000;
+    
+   }
+
+   /* Mostrar submenú cuando el li o su enlace recibe foco (tocar) */
+   nav.menu > ul > li:focus-within > ul {
+    display: flex;
+   }
+
+  /* Nivel 3 también con focus-within */
+  nav.menu ul li ul li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;       /* se abre debajo del nivel 2 en móviles */
+    left: 40%;         /* se abre a la izquierda del nivel 2 en móviles */
+    width: fit-content;      /* ajustar el ancho al tamaño del contenido */
+    max-width: 95vw;         /* no sobrepasar la pantalla */
+    z-index: 2000;
+  }
+
+   nav.menu ul li ul li:focus-within > ul {
+      display: flex;
+   }
+
+   /* Main y productos destacados */
+   main {
+       margin-top: 150px;
+    }
+
+    /* Márgenes y centrado de todas las secciones */
+ section {
+    width: 95%;             /* ancho más reducido para dejar espacio a los lados */
+    max-width: 100%;       /* no se haga demasiado ancho en pantallas grandes */
+    margin: 30px auto;    /* margen superior e inferior más grande, y centrado horizontalmente */
+    box-sizing: border-box;  /* incluye padding en el ancho */
+ }
+
+  /* Para contenido interno centrado */
+   section > * {
+      margin: 0 auto;          /* centra los elementos hijos dentro de la sección */
+   }
+
+   .productos-destacados {
+    max-width: 100%;      /* ocupa casi todo el ancho disponible */
+    margin: 50px auto;      /* margen superior e inferior más grande */
+    padding: 20px 20px 0px 20px; 
+    border-radius: 20px;
+     
+}
+
+/* Sección sobre nosotros */
+.sobre-nosotros {
+    width: 95%;             /* mismo ancho que las demás secciones */
+    max-width: 100%;      /* igual que las demás secciones */
+    margin: 15px auto;      /* centrado horizontal y margen superior/inferior */
+    padding: 20px;           /* padding interno */
+    box-sizing: border-box;  /* incluir padding en el ancho */
+    border-radius: 15px;
+    
+}
+
+/* Texto optimizado para lectura en móvil */
+.sobre-nosotros .texto p {
+    text-align: left;           /* MUCHÍSIMO más cómodo de leer */
+
+}
+
+    /* Productos en fila horizontal, adaptados */
+    .productos-destacados .productos-container {
+        display: flex;
+        flex-direction: row; /* mantener fila horizontal */
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 15px; /* espacio inferior para scrollbar */
+        scroll-snap-type: x mandatory; /* para que "encaje" al hacer scroll */
+        
+    }
+
+    .productos-destacados .producto {
+       flex: 0 0 35%;               /* cada producto ocupa 50% del ancho del móvil */
+       margin: 0;
+       max-width: 39vw;            /* no excede la mitad */
+       scroll-snap-align: center;
+       padding: 10px;              /* espacio interno elegante, no afecta el cálculo */
+       margin-bottom: 0px;
+       box-sizing: border-box;     /* el padding no aumenta el ancho */
+        
+    }
+
+    .productos-destacados .producto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
+
+    /* Sección Sobre Nosotros */
+    .sobre-nosotros .contenedor {
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .sobre-nosotros img {
+        width: 100%;
+        
+    }
+
+    .sobre-nosotros .texto {
+        text-align: center;
+        max-width: 100%;
+    }
+
+   
+    
+    /* Footer */
+
+    footer {
+    width: 100%;            /* mismo ancho que las secciones */
+    max-width: 100%;     /* igual que las demás secciones */
+    margin: 30px auto;     /* centrado horizontal y margen superior/inferior */
+    padding: 20px;         /* padding interno */
+    box-sizing: border-box; /* incluye padding en el ancho */
+    text-align: center;    /* centrado del contenido interno */
+    font-size: 20px;
+    }
+
+    .footer-content {
+        gap: 10px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-links a {
+        font-size: 18px;
+    }
+
+    html, body {
+    overflow-x: hidden;
+}
+
+  * {
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+
+}
+
