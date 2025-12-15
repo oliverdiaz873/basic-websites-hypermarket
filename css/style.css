@@ -5,6 +5,7 @@ html, body {
     height: 100%;
     font-family: Arial, sans-serif;
 }
+
 body {
     background-image: url('../imagenes/fondos/fondo.avif');
     background-size: cover;
@@ -518,6 +519,7 @@ footer {
     margin: 50px auto;      /* margen superior e inferior más grande */
     padding: 20px 20px 0px 20px; 
     border-radius: 20px;
+    height: 420px;
      
 }
 
@@ -561,9 +563,9 @@ footer {
     }
 
     .productos-destacados .producto img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
 
     /* Sección Sobre Nosotros */
@@ -616,10 +618,6 @@ footer {
     overflow-x: hidden;
 }
 
-  * {
-      box-sizing: border-box;
-      max-width: 100%;
-    }
 
 }
 
@@ -704,12 +702,12 @@ footer {
     }
 
     /* Márgenes y centrado de todas las secciones */
- section {
-    width: 95%;             /* ancho más reducido para dejar espacio a los lados */
-    max-width: 100%;       /* no se haga demasiado ancho en pantallas grandes */
-    margin: 30px auto;    /* margen superior e inferior más grande, y centrado horizontalmente */
-    box-sizing: border-box;  /* incluye padding en el ancho */
- }
+   section {
+     width: 95%;             /* ancho más reducido para dejar espacio a los lados */
+     max-width: 100%;       /* no se haga demasiado ancho en pantallas grandes */
+     margin: 30px auto;    /* margen superior e inferior más grande, y centrado horizontalmente */
+     box-sizing: border-box;  /* incluye padding en el ancho */
+   }
 
   /* Para contenido interno centrado */
    section > * {
@@ -717,12 +715,16 @@ footer {
    }
 
    .productos-destacados {
-    max-width: 100%;      /* ocupa casi todo el ancho disponible */
-    margin: 50px auto;      /* margen superior e inferior más grande */
-    padding: 20px 20px 0px 20px; 
-    border-radius: 20px;
-     
-}
+     max-width: 100%;      /* ocupa casi todo el ancho disponible */
+     margin: 50px auto;      /* margen superior e inferior más grande */
+     padding: 20px 22px 0px 22px; 
+     border-radius: 20px;
+     height: 420px;
+    }
+
+    .productos-destacados h2 {
+      font-size: 26px;
+    }
 
 /* Sección sobre nosotros */
 .sobre-nosotros {
@@ -755,9 +757,9 @@ footer {
     .productos-destacados .producto {
        flex: 0 0 35%;               /* cada producto ocupa 50% del ancho del móvil */
        margin: 0;
-       max-width: 39vw;            /* no excede la mitad */
+       max-width: 37vw;            /* no excede la mitad */
        scroll-snap-align: center;
-       padding: 10px;              /* espacio interno elegante, no afecta el cálculo */
+       padding: 5px;              /* espacio interno elegante, no afecta el cálculo */
        margin-bottom: 0px;
        box-sizing: border-box;     /* el padding no aumenta el ancho */
         
@@ -787,7 +789,6 @@ footer {
     }
 
    
-    
     /* Footer */
 
     footer {
@@ -821,10 +822,6 @@ footer {
     overflow-x: hidden;
 }
 
-  * {
-      box-sizing: border-box;
-      max-width: 100%;
-    }
-
+  
 }
 
