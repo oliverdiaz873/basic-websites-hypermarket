@@ -345,12 +345,8 @@ footer {
 }
 
 
-
-
-
-/* Estilos del breadcrumb */
+ /* breadcrumb */
 .breadcrumb {
-  display: inline-block; /* el ancho se adapta al contenido */
   background-color: rgba(0,0,0,0.8);
   padding: 10px 16px;
   border-radius: 8px;
@@ -366,7 +362,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
-  white-space: nowrap;
+  
 }
 
 /* Enlaces dentro del breadcrumb */
@@ -627,35 +623,35 @@ footer {
    }
 
     /* Breadcrumb centrado bajo el header */
-    
-  .breadcrumb {
+   .breadcrumb {
         padding: 10px 2px;
-        font-size: 15px;
+        font-size: 17px;
         margin: 47px auto; /* centrado */
-        white-space: nowrap;  
+        white-space: normal;  
+        width: 90vw;        /* importante para que existan solo dos lineas */
     }
    
-
+    
 
   /* Main */
    main {
-       margin-top: 180px;
+       margin-top: 198px;
     }
 
     /* Márgenes y centrado de todas las secciones */
- section {
-    width: 95%;             /* ancho más reducido para dejar espacio a los lados */
-    max-width: 100%;       /* no se haga demasiado ancho en pantallas grandes */
-    margin: 30px auto;    /* margen superior e inferior más grande, y centrado horizontalmente */
-    box-sizing: border-box;  /* incluye padding en el ancho */
- }
+   section {
+     width: 95%;             /* ancho más reducido para dejar espacio a los lados */
+     max-width: 100%;       /* no se haga demasiado ancho en pantallas grandes */
+     margin: 30px auto;    /* margen superior e inferior más grande, y centrado horizontalmente */
+     box-sizing: border-box;  /* incluye padding en el ancho */
+   }
 
   
-  /* MAIN PRODUCTO */
+    /* section */
     .producto-detalle {
-        padding: 20px;
+        padding: 10px 5px;
         border-radius: 15px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .contenedor-producto {
@@ -717,10 +713,10 @@ footer {
     .productos-similares .producto {
         width: 150px;
         height: auto;
-         height: 250px; /* altura fija, todos iguales */
-         flex: 0 0 35%;               /* cada producto ocupa 50% del ancho del móvil */
-       margin: 0;
-       max-width: 39vw;            /* no excede la mitad */
+        height: 250px; /* altura fija, todos iguales */
+        flex: 0 0 35%;               /* cada producto ocupa 50% del ancho del móvil */
+        margin: 0;
+        max-width: 39vw;            /* no excede la mitad */
         scroll-snap-align: center;
       
     }
@@ -732,7 +728,6 @@ footer {
     .productos-similares .producto p {
         font-size: 14px;
     }
-
 
 
     /* Footer */
@@ -845,9 +840,20 @@ footer {
       display: flex;
    }
 
+    /* Breadcrumb centrado bajo el header */
+   .breadcrumb {
+      padding: 10px 2px;
+      font-size: 16px;
+      margin: 47px auto; /* centrado */
+      white-space: normal;  
+      width: 95vw;        /* importante para que existan solo dos lineas */
+
+    }
+   
+
    /* Main */
    main {
-       margin-top: 180px;
+       margin-top: 200px;
     }
 
     /* Márgenes y centrado de todas las secciones */
@@ -858,48 +864,89 @@ footer {
      box-sizing: border-box;  /* incluye padding en el ancho */
    }
 
-  
-   .productos-destacados {
-     max-width: 100%;      /* ocupa casi todo el ancho disponible */
-     margin: 50px auto;      /* margen superior e inferior más grande */
-     padding: 20px 22px 0px 22px; 
-     border-radius: 20px;
-     height: 420px;
+
+   /* section */
+    .producto-detalle {
+        padding: 10px 3px;
+        border-radius: 15px;
+        margin-top: 20px;
     }
 
-    .productos-destacados h2 {
-      font-size: 26px;
+    .contenedor-producto {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
-    /* Productos en fila horizontal, adaptados */
-    .productos-destacados .productos-container {
+    .imagen-producto img {
+        width: 100%;
+        
+    }
+
+    .info-producto {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .info-producto h1 {
+        font-size: 26px;
+    }
+
+    .info-producto p:first-of-type {
+        font-size: 24px;
+    }
+   
+    .info-producto p {
+           text-align: left;
+           font-size: 20px;
+    }
+
+    .info-producto .detalles {
+        text-decoration: none;
+        text-align: left;
+        font-size: 18px;
+    }
+
+     /* PRODUCTOS SIMILARES */
+    .productos-similares {
+        padding: 20px 10px;
+        height: auto; /* elimina alto fijo */
+    }
+
+    .productos-similares h2 {
+        font-size: 24px;
+        padding: 5px 10px;
+    }
+
+    .productos-similares .productos-container {
+        padding: 0 2px; /* espacio a los lados */
         display: flex;
         flex-direction: row; /* mantener fila horizontal */
         overflow-x: auto;
         gap: 10px;
         padding-bottom: 15px; /* espacio inferior para scrollbar */
         scroll-snap-type: x mandatory; /* para que "encaje" al hacer scroll */
-        
     }
 
-    .productos-destacados .producto {
-       flex: 0 0 35%;               /* cada producto ocupa 50% del ancho del móvil */
-       margin: 0;
-       max-width: 37vw;            /* no excede la mitad */
-       scroll-snap-align: center;
-       padding: 2px;              /* espacio interno elegante, no afecta el cálculo */
-       margin-bottom: 0px;
-       box-sizing: border-box;     /* el padding no aumenta el ancho */
-        
+    .productos-similares .producto {
+        width: 150px;
+        height: auto;
+        height: 250px; /* altura fija, todos iguales */
+        flex: 0 0 35%;               /* cada producto ocupa 50% del ancho del móvil */
+        margin: 0;
+        max-width: 33vw;            /* no excede la mitad */
+        scroll-snap-align: center;
     }
 
-    .productos-destacados .producto img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
+    .productos-similares .producto h3 {
+        font-size: 16px;
     }
 
-    
+    .productos-similares .producto p {
+        font-size: 14px;
+    }
+
+  
    
     /* Footer */
 

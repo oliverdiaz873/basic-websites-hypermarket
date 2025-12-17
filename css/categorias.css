@@ -548,18 +548,18 @@ footer {
     }
 
     /* Márgenes y centrado de todas las secciones */
- section {
-    width: 95%;             /* ancho más reducido para dejar espacio a los lados */
-    max-width: 100%;       /* no se haga demasiado ancho en pantallas grandes */
-    margin: 30px auto;    /* margen superior e inferior más grande, y centrado horizontalmente */
-    box-sizing: border-box;  /* incluye padding en el ancho */
- }
+    section {
+     width: 95%;             /* ancho más reducido para dejar espacio a los lados */
+     max-width: 100%;       /* no se haga demasiado ancho en pantallas grandes */
+     margin: 30px auto;    /* margen superior e inferior más grande, y centrado horizontalmente */
+     box-sizing: border-box;  /* incluye padding en el ancho */
+   }
 
   
    .productos-destacados {
     max-width: 100%;      /* ocupa casi todo el ancho disponible */
     margin: 50px auto;      /* margen superior e inferior más grande */
-    padding: 20px 20px 0px 20px; 
+    padding: 10px 20px 0px 20px; 
     border-radius: 20px;
     height: 420px;
      
@@ -627,8 +627,12 @@ footer {
 
     html, body {
     overflow-x: hidden;
-}
+   }
 
+    /* margin-top para centrar la sección del vínculo cuando la visitemos */
+   .destino {
+     scroll-margin-top: 180px; 
+    }
 
 }
 
@@ -793,8 +797,12 @@ footer {
 
     html, body {
     overflow-x: hidden;
-}
+    }
 
-  
+    /* margin-top para centrar la sección del vínculo cuando la visitemos */
+   .destino {
+     scroll-margin-top: 180px; 
+    }
+
 }
 
