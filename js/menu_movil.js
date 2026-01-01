@@ -1,14 +1,20 @@
 
-
-// codigo js para el comportamiento del menu en dispositivos móviles 
+   // codigo js para el comportamiento del menu en dispositivos móviles 
   // Primer clic en un enlace de nivel 2: abre el submenú de nivel 3.
  // Segundo clic: sigue el enlace y navega al destino.
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {     // addEventListener es un método del objeto EventTarget que se usa para asignar un evento a un elemento HTML.
+                                                              // en el primer parámetro se especifica el tipo de evento, en este caso 'click' que se activa cuando se hace clic en el botón.
+                                                             // en el segundo parámetro se pasa la función que se ejecuta cuando se activa el evento.
+    
+    
     function activarMenuMovil() {
-        if(window.innerWidth <= 480) {
+        // Si el ancho del navegador es menor o igual a 480 px. 
+        if(window.innerWidth <= 480) {         // window.innerWidth es una propiedad del objeto window que devuelve el ancho del área visible del navegador (viewport),
+                                              // expresado en píxeles; es decir, indica cuántos píxeles de ancho tiene la ventana del navegador en ese momento.
+                        
             // Seleccionamos todos los enlaces que tienen submenú
-            const enlacesConSubmenu = document.querySelectorAll('nav.menu li > a');
+            const enlacesConSubmenu = document.querySelectorAll('nav.menu li > a');   // querySelector() es un método del objeto document que permite obtener el primer elemento HTML que coincida con el selector CSS especificado y almacenarlo en una variable.
 
             enlacesConSubmenu.forEach(function(enlace) {
                 const subMenu = enlace.nextElementSibling;
