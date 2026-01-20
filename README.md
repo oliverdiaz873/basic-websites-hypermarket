@@ -17,7 +17,7 @@ It is part of the `basic-websites` category, which includes other simple web pro
 - Styled using CSS only, no JavaScript.
 - Easy to customize and expand.
 - Includes meta tags for SEO and social sharing (Open Graph & Twitter Cards).
-- Favicons for multiple devices.
+
 
 ---
 
