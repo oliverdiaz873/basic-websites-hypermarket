@@ -14,7 +14,6 @@ It is part of the `basic-websites` category, which includes other simple web pro
 ## Features
 
 - Basic layout with a header, main content, and footer.
-- Responsive design basics.
 - Styled using CSS only, no JavaScript.
 - Easy to customize and expand.
 - Includes meta tags for SEO and social sharing (Open Graph & Twitter Cards).
